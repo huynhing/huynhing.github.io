@@ -27,9 +27,14 @@ body {
 	border: 2px solid black;
 }
 
+.contact a {
+	color: black;
+}
+
 .contact h2 {
 	color: navy;
 }
+
 h1 {
     color: navy;
 }
