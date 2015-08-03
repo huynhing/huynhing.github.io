@@ -6,10 +6,15 @@ html {
   background-size: cover;
 }
 
+.nav {
+	border: 2px solid black;
+}
+
 .nav a {
 	color: black;
 	text-transform: uppercase;
 }
+
 
 .all {
 	font-family: 'Shift', sans-serif;
