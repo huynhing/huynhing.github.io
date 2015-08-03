@@ -2,6 +2,10 @@ body {
     background-color: lightblue;
 }
 
+.all {
+	font-family: 'Shift', sans-serif;
+}
+
 h1 {
     color: navy;
 }
