@@ -6,6 +6,9 @@ html {
   background-size: cover;
 }
 
+.all {
+	font-family: 'Shift', sans-serif;
+}
 .about {
 	color: white;
 }
