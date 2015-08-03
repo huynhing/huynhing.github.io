@@ -1,0 +1,20 @@
+html { 
+  background: url(../img/car.jpg) no-repeat center center fixed; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+.about {
+	color: white;
+}
+.me {
+	color: white;
+	font-size: 25px;
+}
+
+.rand {
+	color: white;
+	font-size: 25px;
+}
