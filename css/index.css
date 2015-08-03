@@ -20,6 +20,10 @@ body {
 	background-color:lightblue;
 	border: 2px solid black;
 }
+
+.contact h2 {
+	color: navy;
+}
 h1 {
     color: navy;
 }
