@@ -9,6 +9,7 @@ body {
 
 .mess {
 	background-color: lightblue;
+	border: 2px solid black;
 }
 
 .all {
@@ -17,6 +18,7 @@ body {
 
 .contact {
 	background-color:lightblue;
+	border: 2px solid black;
 }
 h1 {
     color: navy;
