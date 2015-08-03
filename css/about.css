@@ -6,6 +6,11 @@ html {
   background-size: cover;
 }
 
+.nav a {
+	color: black;
+	text-transform: uppercase;
+}
+
 .all {
 	font-family: 'Shift', sans-serif;
 }
