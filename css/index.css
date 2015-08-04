@@ -12,6 +12,10 @@ body {
 	text-transform: uppercase;
 }
 
+.nav li {
+	display: inline;
+}
+
 .mess {
 	background-color: lightblue;
 	border: 2px solid black;
