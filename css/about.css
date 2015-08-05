@@ -1,15 +1,30 @@
+.nav {
+	text-align: center;
+	padding: 5px;
+	border-bottom: 1px solid;
+}
 .nav a {
 	color: black;
 	text-transform: uppercase;
 }
 
-.nav li {
-	display: inline;
+.nav .UL {
+	margin: 2px auto;
 }
+.nav li {
+	display: inline-block;
+	margin-left: 60px;
+	margin-right: 60px;
 
+}
 
 .all {
 	font-family: 'Shift', sans-serif;
+	text-align: center;
+}
+
+.about {
+	text-align: center;
 }
 
 .me {
@@ -18,6 +33,11 @@
 
 .rand {
 	font-size: 20px;
+	text-align: center;
+}
+
+.rand li {
+	display: block;
 }
 
 .car a {
