@@ -2,9 +2,10 @@
 	text-align: center;
 	padding: 5px;
 	border-bottom: 1px solid;
+	background-color: #4169E1;
 }
 .nav a {
-	color: black;
+	color: white;
 	text-transform: uppercase;
 }
 
