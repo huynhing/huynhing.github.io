@@ -1,7 +1,8 @@
 .nav {
 	text-align: center;
-	padding: 5px;
-	border-bottom: 1px solid;
+	padding: 4px;
+	border-top: 2px solid;
+	border-bottom: 2px solid;
 	background-color: #4169E1;
 }
 .nav a {
@@ -26,6 +27,8 @@
 
 .about {
 	text-align: center;
+	margin: 20px;
+	border: 2px solid;
 }
 
 .me {
