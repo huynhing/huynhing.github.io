@@ -4,13 +4,14 @@
 
 .nav {
 	text-align: center;
-	padding: 4px;
+	padding: 8px;
 	border: 2px solid;
 	background-color: #4169E1;
 }
 .nav a {
 	color: white;
 	text-transform: uppercase;
+    text-decoration: none;
 }
 
 .nav a:hover {
@@ -38,6 +39,7 @@
 
 .mess h1 {
 	text-align: center;
+    font-weight: normal;
 }
 
 .copy .copyright p {
