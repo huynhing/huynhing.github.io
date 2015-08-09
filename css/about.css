@@ -82,7 +82,11 @@
 }
 
 .me img {
-    width: 1.5%;
+    width: 1.75%;
+}
+
+.me p {
+    margin: 5px;
 }
 
 .copy .copyright p {
