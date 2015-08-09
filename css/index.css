@@ -1,4 +1,4 @@
-N.all {
+.all {
 	font-family: 'Shift', sans-serif;
 }
 
@@ -9,8 +9,20 @@ N.all {
 	border: 2px solid;
 	background-color: #4169E1;
 }
+
+#home {
+    color: black;
+}
+
+#about, #projects, #contact, #resume {
+    color: white;   
+}
+
+#resume:hover {
+    color: black;
+}
+
 .nav a {
-	color: white;
 	text-transform: uppercase;
     text-decoration: none;
 }
