@@ -4,10 +4,22 @@
 	border: 2px solid;
 	background-color: #4169E1;
 }
+
+#about {
+    color:black;
+}
+
+#home, #projects, #contact, #resume {
+    color: white;
+}
+
 .nav a {
-	color: white;
 	text-transform: uppercase;
     text-decoration: none;
+}
+
+.nav a:visited {
+    color: white;
 }
 
 .nav a:hover {

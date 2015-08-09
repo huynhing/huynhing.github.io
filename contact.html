@@ -3,6 +3,8 @@
 
  <head>
 	<link rel="stylesheet" href="css/contact.css">
+    <script src="js/jquery.js"></script>
+    <script src="js/index.js"></script> 
 	<title>Contact</title>
 </head>
 
@@ -13,10 +15,11 @@
 <div class="nav">
 	<div class="container">
 	<ul class="UL">
-		<li> <a href="index.html">Home</a> </li>
-		<li> <a href="about.html">About Me</a> </li>
-		<li> <a href="projects.html">Projects</a> </li>
-		<li> <a href="files/resume.pdf">Resume</a> </li>
+		<li id="home"> <a onclick="home();">Home</a> </li>
+		<li id="about"> <a onclick="about();">About Me</a></li>
+		<li id="projects"> <a onclick="projects();">Projects</a> </li>
+		<li id="resume"> <a href="files/resume.pdf" target="_blank">Resume</a> </li>
+		<li id="contact"> <a>Contact</a> </li>
 	</ul>
 	</div>
 </div>
