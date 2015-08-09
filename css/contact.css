@@ -59,8 +59,8 @@
     font-weight: normal;
 }
 
-.contact {
-    bottom: 0px;
+.contact h3{
+    margin: 5px;
 }
 .email h3 {
     font-weight: normal;

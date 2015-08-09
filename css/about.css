@@ -53,6 +53,22 @@
     font-weight: normal;
 }
 
+.myphoto {
+  -webkit-transition: all 0.5s ease;
+     -moz-transition: all 0.5s ease;
+       -o-transition: all 0.5s ease;
+      -ms-transition: all 0.5s ease;
+          transition: all 0.5s ease;
+}
+ 
+.myphoto:hover {
+  -webkit-transform: rotate(540deg);
+     -moz-transform: rotate(540deg);
+       -o-transform: rotate(540deg);
+      -ms-transform: rotate(540deg);
+          transform: rotate(540deg);
+}
+
 .myphoto img {
     border-radius: 50%;
 }
