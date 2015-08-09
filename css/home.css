@@ -17,6 +17,10 @@
     color: white;   
 }
 
+#resume:hover {
+    color: black;
+}
+
 .nav a {
 	text-transform: uppercase;
     text-decoration: none;
