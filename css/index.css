@@ -24,11 +24,14 @@
 .nav a {
 	text-transform: uppercase;
     text-decoration: none;
+    color: white;
 }
 
 .nav a:visited {
     color: white;
 }
+
+.nav a:ac
 
 
 .nav a:hover {
