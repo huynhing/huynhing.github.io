@@ -83,8 +83,13 @@
 }
 
 .me img {
-    width: 1.75%;
+    width: 2.25%;
 }
+
+#bball, #piano, #carcar, #tech, #food, #sleep {
+    text-decoration: none;
+}
+
 
 .me p {
     margin: 10px;
