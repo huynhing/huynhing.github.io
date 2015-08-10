@@ -63,11 +63,11 @@
 }
  
 .myphoto:hover {
-  -webkit-transform: rotate(720deg);
-     -moz-transform: rotate(720deg);
-       -o-transform: rotate(720deg);
-      -ms-transform: rotate(720deg);
-          transform: rotate(720deg);
+  -webkit-transform: rotate(10deg);
+     -moz-transform: rotate(10deg);
+       -o-transform: rotate(10deg);
+      -ms-transform: rotate(10deg);
+          transform: rotate(10deg);
 }
 
 .myphoto img {
