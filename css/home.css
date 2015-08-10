@@ -71,35 +71,10 @@
     margin: 5px;
 }
 
-
-/* Sticky Footer */
-
-* {
-  margin: 0;
-}
-
-html, body {
-  height: 100%;
-}
-
-.content {
-  min-height: 100%;
-  margin-bottom: -142px; 
-}
-
-.content:after {
-  content: "";
-  display: block;
-}
-
-.copy, .content:after {
-  height: 100px; 
-}
-
 footer {
     text-align: center;
-    position: fixed;
     bottom: 0;
+    margin-top: 50px;
     width: 100%;
     display: block;
     padding-bottom: 10px;
