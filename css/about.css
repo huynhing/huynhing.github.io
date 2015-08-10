@@ -89,12 +89,14 @@
     margin: 10px;
 }
 
-.copy .copyright p {
-	text-align: center;
-	position: absolute;
-	bottom: 0px;
-	width: 100%;
+footer {
+    padding-top: 30px;
+    padding-bottom: 5px;
+    text-align: center;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    display: block;
 }
-
 
 
