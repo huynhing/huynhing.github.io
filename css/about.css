@@ -65,11 +65,11 @@
 }
  
 .myphoto:hover {
-  -webkit-transform: rotate(10deg);
-     -moz-transform: rotate(10deg);
-       -o-transform: rotate(10deg);
-      -ms-transform: rotate(10deg);
-          transform: rotate(10deg);
+  -webkit-transform: rotate(30deg);
+     -moz-transform: rotate(30deg);
+       -o-transform: rotate(30deg);
+      -ms-transform: rotate(30deg);
+          transform: rotate(30deg);
 }
 
 .myphoto img {
