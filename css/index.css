@@ -13,10 +13,6 @@
     color: black;
 }
 
-#about, #projects, #contact, #resume {
-    color: white;   
-}
-
 #resume:hover {
     color: black;
 }
@@ -30,9 +26,6 @@
 .nav a:visited {
     color: white;
 }
-
-.nav a:ac
-
 
 .nav a:hover {
 	color: black;

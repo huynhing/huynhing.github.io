@@ -1,5 +1,6 @@
 .all {
 	font-family: 'Shift', sans-serif;
+    cursor: default;
 }
 
 .nav {
@@ -11,19 +12,13 @@
 
 #home {
     color: black;
-}
-
-#about, #projects, #contact, #resume {
-    color: white;   
-}
-
-#resume:hover {
-    color: black;
+    cursor: default;
 }
 
 .nav a {
 	text-transform: uppercase;
     text-decoration: none;
+    color: white;
 }
 
 .nav a:visited {
@@ -33,6 +28,7 @@
 .nav a:hover {
 	color: black;
 	text-decoration: none;
+    cursor: pointer;
 }
 
 .nav .UL {
