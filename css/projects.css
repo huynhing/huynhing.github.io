@@ -3,6 +3,12 @@
     cursor: default;
 }
 
+#name {
+    float: right;
+    text-transform: uppercase;
+    color: white;
+}
+
 .nav {
 	text-align: left;
 	padding: 8px;

@@ -2,6 +2,12 @@
 	font-family: 'Lucida Grande', 'Lucida Sans Unicode', 'Lucida Sans', Geneva, Verdana, sans-serif;
 }
 
+#name {
+    float: right;
+    text-transform: uppercase;
+    color: white;
+}
+
 .nav {
 	text-align: left;
 	padding: 8px;
