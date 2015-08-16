@@ -75,7 +75,6 @@ function test() {
 }
 
 $(document).ready(function() {
-	home();
     preload(pianoplaying.jpg, 
             car.jpg, 
             lakers.png, 
@@ -93,4 +92,6 @@ $(document).ready(function() {
             tool.png, 
             jdm.png, 
             piano.png);
+    alert("IMAGES PRELOADED");
+	home();
 });
