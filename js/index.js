@@ -1,3 +1,13 @@
+var images = [];
+function preload() {
+    var path = "../img/";
+    for(i=0; i < arguments.length; i++) {
+        images[i] = new Image();
+        images[i].src = path + preload.arguments[i];
+    }
+}
+
+
 function about() {
     $('#css_profile').attr('href', 'css/about.css');
     $(".mess h1").text('About Me');
@@ -66,4 +76,21 @@ function test() {
 
 $(document).ready(function() {
 	home();
+    preload(pianoplaying.jpg, 
+            car.jpg, 
+            lakers.png, 
+            me.jpg, 
+            under-construction.jpg, 
+            phone.png, 
+            computer.png, 
+            pho.png, 
+            basketball.png, 
+            sushi.png, 
+            burger.png, 
+            sleeping.png, 
+            pizza.png, 
+            car.png, 
+            tool.png, 
+            jdm.png, 
+            piano.png);
 });
