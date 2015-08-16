@@ -80,7 +80,7 @@ function test() {
 }
 
 $(document).ready(function() {
-    loadIndex("under-construction.jpg";)
+    loadIndex("under-construction.jpg");
     home();
     preload(["pianoplaying.jpg", 
             "car.jpg", 
