@@ -1,5 +1,5 @@
 var images = [];
-function preload() {
+function preload(callback) {
     var path = "../img/";
     var arrayofimages = ["under-construction.jpg",
     		"pianoplaying.jpg", 
@@ -21,6 +21,9 @@ function preload() {
     for(i=0; i < arrayofimages.length; i++) {
         images[i] = new Image();
         images[i].src = path + arrayofimages[i];
+    }
+    if (callback && typeof(callback) === "function") {
+        callback();
     }
 }
 
