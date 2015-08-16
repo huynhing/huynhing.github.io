@@ -2,9 +2,14 @@ var images = [];
 function preload(arrayofimages) {
     var path = "../img/";
     for(i=0; i < arrayofimages.length; i++) {
-        images[i] = new Image();
-        images[i].src = path + arrayofimages[i];
+        images[i+1] = new Image();
+        images[i+1].src = path + arrayofimages[i];
     }
+}
+
+function loadIndex(image) {
+    images[0] = new Image();
+    images[0].src = "../img/" + image;
 }
 
 
@@ -75,12 +80,12 @@ function test() {
 }
 
 $(document).ready(function() {
+    loadIndex("under-construction.jpg";)
     home();
     preload(["pianoplaying.jpg", 
             "car.jpg", 
             "lakers.png", 
             "me.jpg", 
-            "under-construction.jpg", 
             "phone.png", 
             "computer.png", 
             "pho.png", 
