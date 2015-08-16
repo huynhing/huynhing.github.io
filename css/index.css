@@ -92,6 +92,8 @@ footer {
     padding-bottom: 10px;
 }
 
+/* Preloading images */
+
 #loading {
     position: fixed;
 	left: 0px;

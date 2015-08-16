@@ -1,4 +1,10 @@
 var images = [];
+
+function preload_spinner() {
+    images[0] = new Image();
+    images[0].src = "../img/loading.gif";
+}
+
 function preload(callback) {
     var path = "../img/";
     var arrayofimages = ["under-construction.jpg",
@@ -19,8 +25,8 @@ function preload(callback) {
             "jdm.png", 
             "piano.png"];
     for(i=0; i < arrayofimages.length; i++) {
-        images[i] = new Image();
-        images[i].src = path + arrayofimages[i];
+        images[i+1] = new Image();
+        images[i+1].src = path + arrayofimages[i];
     }
     if (callback && typeof(callback) === "function") {
         callback();
