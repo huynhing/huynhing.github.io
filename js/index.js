@@ -1,9 +1,9 @@
 var images = [];
-function preload() {
+function preload(arrayofimages) {
     var path = "../img/";
-    for(i=0; i < arguments.length; i++) {
+    for(i=0; i < arrayofimages.length; i++) {
         images[i] = new Image();
-        images[i].src = path + preload.arguments[i];
+        images[i].src = path + arrayofimages[i];
     }
 }
 
@@ -75,23 +75,23 @@ function test() {
 }
 
 $(document).ready(function() {
-    preload(pianoplaying.jpg, 
-            car.jpg, 
-            lakers.png, 
-            me.jpg, 
-            under-construction.jpg, 
-            phone.png, 
-            computer.png, 
-            pho.png, 
-            basketball.png, 
-            sushi.png, 
-            burger.png, 
-            sleeping.png, 
-            pizza.png, 
-            car.png, 
-            tool.png, 
-            jdm.png, 
-            piano.png);
+    preload(["pianoplaying.jpg", 
+            "car.jpg", 
+            "lakers.png", 
+            "me.jpg", 
+            "under-construction.jpg", 
+            "phone.png", 
+            "computer.png", 
+            "pho.png", 
+            "basketball.png", 
+            "sushi.png", 
+            "burger.png", 
+            "sleeping.png", 
+            "pizza.png", 
+            "car.png", 
+            "tool.png", 
+            "jdm.png", 
+            "piano.png"]);
+    home();
     alert("IMAGES PRELOADED");
-	home();
 });
