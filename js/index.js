@@ -1,5 +1,6 @@
 function about() {
     $('#css_profile').attr('href', 'css/about.css');
+    $(".mess h1").text('About Me');
     $("#content").remove();
 	$("#content-wrapper").load("../about.html");
     $("#about").removeAttr('onclick');
@@ -14,6 +15,7 @@ function about() {
 
 function home() {
     $('#css_profile').attr('href', 'css/home.css');
+    $(".mess h1").text('Welcome to my personal website!');
     $("#content").remove();
 	$("#content-wrapper").load("../home.html");
     $("#home").removeAttr('onclick');
@@ -28,6 +30,7 @@ function home() {
 }
 function projects() {
     $('#css_profile').attr('href', 'css/projects.css');
+    $(".mess h1").text('Projects');
     $("#content").remove();
 	$("#content-wrapper").load("../projects.html");
     $("#projects").removeAttr('onclick');
@@ -42,6 +45,7 @@ function projects() {
 
 function contact() {
     $('#css_profile').attr('href', 'css/contact.css');
+    $(".mess h1").text('Contact');
     $("#content").remove();
 	$("#content-wrapper").load("../contact.html");
     $("#contact").removeAttr('onclick');
