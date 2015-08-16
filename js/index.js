@@ -18,6 +18,7 @@ function home() {
     $("#about").attr('onclick', 'about();');
     $("#projects").attr('onclick', 'projects();');
     $("#contact").attr('onclick', 'contact();');
+    $('.loading').remove();
     
 }
 function projects() {
