@@ -4,13 +4,9 @@ function about() {
     $("#content").remove();
 	$("#content-wrapper").load("../about.html");
     $("#about").removeAttr('onclick');
-    $("#about").removeAttr('href');
     $("#home").attr('onclick', 'home();');
-    $("#home").attr('href', 'javascript:;');
     $("#projects").attr('onclick', 'projects();');
-    $("#projects").attr('href', 'javascript:;');
     $("#contact").attr('onclick', 'contact();');
-    $("#contact").attr('href', 'javascript:;');
 }
 
 function home() {
@@ -19,13 +15,9 @@ function home() {
     $("#content").remove();
 	$("#content-wrapper").load("../home.html");
     $("#home").removeAttr('onclick');
-    $("#home").removeAttr('href');
     $("#about").attr('onclick', 'about();');
-    $("#about").attr('href', 'javascript:;');
     $("#projects").attr('onclick', 'projects();');
-    $("#projects").attr('href', 'javascript:;');
     $("#contact").attr('onclick', 'contact();');
-    $("#contact").attr('href', 'javascript:;');
     
 }
 function projects() {
@@ -34,13 +26,9 @@ function projects() {
     $("#content").remove();
 	$("#content-wrapper").load("../projects.html");
     $("#projects").removeAttr('onclick');
-    $("#projects").removeAttr('href');
     $("#home").attr('onclick', 'home();');
-    $("#home").attr('href', 'javascript:;');
     $("#about").attr('onclick', 'about();');
-    $("#about").attr('href', 'javascript:;');
     $("#contact").attr('onclick', 'contact();');
-    $("#contact").attr('href', 'javascript:;');
 }
 
 function contact() {
@@ -49,13 +37,31 @@ function contact() {
     $("#content").remove();
 	$("#content-wrapper").load("../contact.html");
     $("#contact").removeAttr('onclick');
-    $("#contact").removeAttr('href');
     $("#home").attr('onclick', 'home();');
-    $("#home").attr('href', 'javascript:;');
     $("#about").attr('onclick', 'about();');
-    $("#about").attr('href', 'javascript:;');
     $("#projects").attr('onclick', 'projects();');
-    $("#projects").attr('href', 'javascript:;');
+}
+
+var div_begin = "<div id='divider'>";
+var ball = "<img id='lakers' src='../img/lakers.png'>";
+var content = "<p>Favorite Team: Los Angeles Lakers</p><p>Favorite Players: Kobe Bryant & Pau Gasol</p><p>Basketball Arenas Visited: Staples Center, Oracle Arena</p><p>Potential Future Lakers Season Ticket Holder</p><p>BALL IS LIFE</p>";
+var div_end = "</div>";
+
+function test() {
+    if($('#divider').length == 0) {
+        $(div_begin + ball + content+ div_end).hide().appendTo('#content').fadeIn(500);
+        $('html,body').animate({
+        scrollTop: $("#divider").offset().top},
+        'slow');
+    } else {
+        $('html,body').animate({
+        scrollTop: $(".all").offset().top},
+        'fast');
+        $('#divider').fadeOut(500, function() {
+                    $(this).empty();
+                    $(this).remove();
+        });
+    }
 }
 
 $(document).ready(function() {

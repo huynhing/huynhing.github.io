@@ -26,6 +26,7 @@
 	text-transform: uppercase;
     text-decoration: none;
     color: white;
+    cursor: pointer;
 }
 
 .nav a:visited {
