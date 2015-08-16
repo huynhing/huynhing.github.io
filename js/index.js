@@ -18,9 +18,8 @@ function home() {
     $("#about").attr('onclick', 'about();');
     $("#projects").attr('onclick', 'projects();');
     $("#contact").attr('onclick', 'contact();');
-    $('.loading').remove();
-    
 }
+
 function projects() {
     $('#css_profile').attr('href', 'css/projects.css');
     $(".mess h1").text('Projects');
