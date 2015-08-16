@@ -93,5 +93,4 @@ $(document).ready(function() {
             "jdm.png", 
             "piano.png"]);
     home();
-    alert("IMAGES PRELOADED");
 });
