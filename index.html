@@ -4,14 +4,9 @@
  <head>
 	<link id="css_profile" rel="stylesheet" href="css/index.css">
 	<script src="js/jquery.js"></script>
-    <script type="text/javascript" src="js/preload.js"></script> 
-    <script type="text/javascript">
-        preload(function() {
-//            $("#loading").fadeOut("slow");
-        });
-    </script>
-    <link rel="shortcut icon" type="image/png" href="/img/favicon.ico"/>
+    <script type="text/javascript" src="js/preload.js"></script>
     <script id="jq" src="js/index.js"></script> 
+    <link rel="shortcut icon" type="image/png" href="/img/favicon.ico"/>
 	<title>Eric Huynh</title>
 </head>
 
@@ -19,6 +14,9 @@
 
 <div id="loading"></div>
 <script>
+    preload(function() {
+        $("#loading").fadeOut("slow");
+    });
     setTimeout(home, 1500);
 </script>
 

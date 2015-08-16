@@ -63,7 +63,3 @@ function test() {
         });
     }
 }
-//
-//$(document).ready(function() {
-//    home();
-//});
