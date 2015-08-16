@@ -34,11 +34,11 @@ function preload(callback) {
 }
 
 function init() {
-    $('.all').fadeOut('fast', function() {
+    $('.all').fadeOut(150, function() {
         $('#css_profile').attr('href', 'css/home.css');
         $(".mess h1").text('Welcome to my personal website!');
         $("#content-wrapper").load("../home.html", function() {
-            $('.all').fadeIn('fast');
+            $('.all').fadeIn(150);
         });
     });
     $("#home").removeAttr('onclick');
@@ -47,16 +47,16 @@ function init() {
     $("#contact").attr('onclick', 'contact();');   
 }
 
-function about() {
-    $('.fademe').fadeOut('fast', function() {
-        $("#content-wrapper").fadeOut('fast', function() {
+function about() {  
+    $('.fademe').fadeOut(150, function() {
+        $("#content-wrapper").fadeOut(150, function() {
             $("#content").remove();
             $('#css_profile').attr('href', 'css/about.css');
-            $(".mess h1").fadeOut('fast', function() {
-                $(".mess h1").fadeIn('fast');
+            $(".mess h1").fadeOut(150, function() {
+                $(".mess h1").fadeIn(150);
                 $(".mess h1").text('About Me');
-                $("#content-wrapper").fadeIn('fast').load("../about.html", function() {
-                    $('.fademe').fadeIn('fast');   
+                $("#content-wrapper").fadeIn(150).load("../about.html", function() {
+                    $('.fademe').fadeIn(150);   
                 });
             });
         });
@@ -68,15 +68,15 @@ function about() {
 }
 
 function home() {
-    $('.fademe').fadeOut('fast', function() {
-        $("#content-wrapper").fadeOut('fast', function() {
+    $('.fademe').fadeOut(150, function() {
+        $("#content-wrapper").fadeOut(150, function() {
             $("#content").remove();
             $('#css_profile').attr('href', 'css/home.css');
-            $(".mess h1").fadeOut('fast', function() {
-                $(".mess h1").fadeIn('fast');
+            $(".mess h1").fadeOut(150, function() {
+                $(".mess h1").fadeIn(150);
                 $(".mess h1").text('Welcome to my personal site!');
-                $("#content-wrapper").fadeIn('fast').load("../home.html", function() {
-                    $('.fademe').fadeIn('fast');   
+                $("#content-wrapper").fadeIn(150).load("../home.html", function() {
+                    $('.fademe').fadeIn(150);   
                 });
             });
         });
@@ -88,15 +88,15 @@ function home() {
 }
 
 function projects() {
-    $('.fademe').fadeOut('fast', function() {
-        $("#content-wrapper").fadeOut('fast', function() {
+    $('.fademe').fadeOut(150, function() {
+        $("#content-wrapper").fadeOut(150, function() {
             $("#content").remove();
             $('#css_profile').attr('href', 'css/projects.css');
-            $(".mess h1").fadeOut('fast', function() {
-                $(".mess h1").fadeIn('fast');
+            $(".mess h1").fadeOut(150, function() {
+                $(".mess h1").fadeIn(150);
                 $(".mess h1").text('Projects');
-                $("#content-wrapper").fadeIn('fast').load("../projects.html", function() {
-                    $('.fademe').fadeIn('fast');   
+                $("#content-wrapper").fadeIn(150).load("../projects.html", function() {
+                    $('.fademe').fadeIn(150);   
                 });
             });
         });
@@ -108,15 +108,15 @@ function projects() {
 }
 
 function contact() {
-    $('.fademe').fadeOut('fast', function() {
-        $("#content-wrapper").fadeOut('fast', function() {
+    $('.fademe').fadeOut(150, function() {
+        $("#content-wrapper").fadeOut(150, function() {
             $("#content").remove();
             $('#css_profile').attr('href', 'css/contact.css');
-            $(".mess h1").fadeOut('fast', function() {
-                $(".mess h1").fadeIn('fast');
+            $(".mess h1").fadeOut(150, function() {
+                $(".mess h1").fadeIn(150);
                 $(".mess h1").text('Contact');
-                $("#content-wrapper").fadeIn('fast').load("../contact.html", function() {
-                    $('.fademe').fadeIn('fast');   
+                $("#content-wrapper").fadeIn(150).load("../contact.html", function() {
+                    $('.fademe').fadeIn(150);   
                 });
             });
         });
@@ -141,7 +141,7 @@ function test() {
     } else {
         $('html,body').animate({
         scrollTop: $(".all").offset().top},
-        'fast');
+        150);
         $('#divider').fadeOut(500, function() {
                     $(this).empty();
                     $(this).remove();
