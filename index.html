@@ -14,12 +14,11 @@
 
 <div id="loading"></div>
 <script>
-//    preload(function() {
-//        $("#loading").fadeOut("slow");
-//    });
-    preload();
-    setTimeout(home, 1500);
-    $('loading').remove();
+    preload(function() {
+        $("#loading").delay(2000).fadeOut(500);
+        home();
+    });
+//    setTimeout(home, 1500);
 </script>
 
 <div class="all">
