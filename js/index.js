@@ -23,7 +23,9 @@ function preload(callback) {
         images[i].src = path + arrayofimages[i];
     }
     if (callback && typeof(callback) === "function") {
-        callback();
+        $('body').load('../init.html', function() {
+            callback();
+        });
     }
 }
 
@@ -39,6 +41,9 @@ function about() {
 }
 
 function home() {
+    if($('.loading').length != 0) {
+        $('.loading').remove();
+    }
     $('#css_profile').attr('href', 'css/home.css');
     $(".mess h1").text('Welcome to my personal website!');
     $("#content").remove();
