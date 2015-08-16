@@ -1,18 +1,3 @@
-var images = [];
-function preload(arrayofimages) {
-    var path = "../img/";
-    for(i=0; i < arrayofimages.length; i++) {
-        images[i+1] = new Image();
-        images[i+1].src = path + arrayofimages[i];
-    }
-}
-
-function loadIndex(image) {
-    images[0] = new Image();
-    images[0].src = "../img/" + image;
-}
-
-
 function about() {
     $('#css_profile').attr('href', 'css/about.css');
     $(".mess h1").text('About Me');
@@ -80,22 +65,5 @@ function test() {
 }
 
 $(document).ready(function() {
-    loadIndex("under-construction.jpg");
     home();
-    preload(["pianoplaying.jpg", 
-            "car.jpg", 
-            "lakers.png", 
-            "me.jpg", 
-            "phone.png", 
-            "computer.png", 
-            "pho.png", 
-            "basketball.png", 
-            "sushi.png", 
-            "burger.png", 
-            "sleeping.png", 
-            "pizza.png", 
-            "car.png", 
-            "tool.png", 
-            "jdm.png", 
-            "piano.png"]);
 });
