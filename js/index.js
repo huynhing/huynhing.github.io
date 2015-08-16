@@ -33,11 +33,34 @@ function preload(callback) {
     }
 }
 
+function init() {
+    $('.all').fadeOut('fast', function() {
+        $('#css_profile').attr('href', 'css/home.css');
+        $(".mess h1").text('Welcome to my personal website!');
+        $("#content-wrapper").load("../home.html", function() {
+            $('.all').fadeIn('fast');
+        });
+    });
+    $("#home").removeAttr('onclick');
+    $("#about").attr('onclick', 'about();');
+    $("#projects").attr('onclick', 'projects();');
+    $("#contact").attr('onclick', 'contact();');   
+}
+
 function about() {
-    $('#css_profile').attr('href', 'css/about.css');
-    $(".mess h1").text('About Me');
-    $("#content").remove();
-	$("#content-wrapper").load("../about.html");
+    $('.fademe').fadeOut('fast', function() {
+        $("#content-wrapper").fadeOut('fast', function() {
+            $("#content").remove();
+            $('#css_profile').attr('href', 'css/about.css');
+            $(".mess h1").fadeOut('fast', function() {
+                $(".mess h1").fadeIn('fast');
+                $(".mess h1").text('About Me');
+                $("#content-wrapper").fadeIn('fast').load("../about.html", function() {
+                    $('.fademe').fadeIn('fast');   
+                });
+            });
+        });
+    });
     $("#about").removeAttr('onclick');
     $("#home").attr('onclick', 'home();');
     $("#projects").attr('onclick', 'projects();');
@@ -45,10 +68,19 @@ function about() {
 }
 
 function home() {
-    $('#css_profile').attr('href', 'css/home.css');
-    $(".mess h1").text('Welcome to my personal website!');
-    $("#content").remove();
-	$("#content-wrapper").load("../home.html");
+    $('.fademe').fadeOut('fast', function() {
+        $("#content-wrapper").fadeOut('fast', function() {
+            $("#content").remove();
+            $('#css_profile').attr('href', 'css/home.css');
+            $(".mess h1").fadeOut('fast', function() {
+                $(".mess h1").fadeIn('fast');
+                $(".mess h1").text('Welcome to my personal site!');
+                $("#content-wrapper").fadeIn('fast').load("../home.html", function() {
+                    $('.fademe').fadeIn('fast');   
+                });
+            });
+        });
+    });
     $("#home").removeAttr('onclick');
     $("#about").attr('onclick', 'about();');
     $("#projects").attr('onclick', 'projects();');
@@ -56,10 +88,19 @@ function home() {
 }
 
 function projects() {
-    $('#css_profile').attr('href', 'css/projects.css');
-    $(".mess h1").text('Projects');
-    $("#content").remove();
-	$("#content-wrapper").load("../projects.html");
+    $('.fademe').fadeOut('fast', function() {
+        $("#content-wrapper").fadeOut('fast', function() {
+            $("#content").remove();
+            $('#css_profile').attr('href', 'css/projects.css');
+            $(".mess h1").fadeOut('fast', function() {
+                $(".mess h1").fadeIn('fast');
+                $(".mess h1").text('Projects');
+                $("#content-wrapper").fadeIn('fast').load("../projects.html", function() {
+                    $('.fademe').fadeIn('fast');   
+                });
+            });
+        });
+    });
     $("#projects").removeAttr('onclick');
     $("#home").attr('onclick', 'home();');
     $("#about").attr('onclick', 'about();');
@@ -67,10 +108,19 @@ function projects() {
 }
 
 function contact() {
-    $('#css_profile').attr('href', 'css/contact.css');
-    $(".mess h1").text('Contact');
-    $("#content").remove();
-	$("#content-wrapper").load("../contact.html");
+    $('.fademe').fadeOut('fast', function() {
+        $("#content-wrapper").fadeOut('fast', function() {
+            $("#content").remove();
+            $('#css_profile').attr('href', 'css/contact.css');
+            $(".mess h1").fadeOut('fast', function() {
+                $(".mess h1").fadeIn('fast');
+                $(".mess h1").text('Contact');
+                $("#content-wrapper").fadeIn('fast').load("../contact.html", function() {
+                    $('.fademe').fadeIn('fast');   
+                });
+            });
+        });
+    });
     $("#contact").removeAttr('onclick');
     $("#home").attr('onclick', 'home();');
     $("#about").attr('onclick', 'about();');
@@ -79,7 +129,7 @@ function contact() {
 
 var div_begin = "<div id='divider'>";
 var ball = "<img id='lakers' src='../img/lakers.png'>";
-var content = "<p>Favorite Team: Los Angeles Lakers</p><p>Favorite Players: Kobe Bryant & Pau Gasol</p><p>Basketball Arenas Visited: Staples Center, Oracle Arena</p><p>Potential Future Lakers Season Ticket Holder</p><p>BALL IS LIFE</p>";
+var content = "<p>Favorite Team: Los Angeles Lakers</p><p>Favorite Players: Kobe Bryant & Pau Gasol</p><p>Basketball Arenas Visited: Staples Center, Oracle Arena</p><p>Potential Future Lakers Season Ticket Holder</p>";
 var div_end = "</div>";
 
 function test() {
