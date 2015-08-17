@@ -52,7 +52,7 @@
 }
 
 .mess {
-	border: 2px solid;
+	border: 4px solid;
 	border-radius: 25px;
     margin: 20px;    
 	background-color: #F5F5F5;
@@ -124,7 +124,7 @@ footer {
     font-size: 20px;
     border: 4px solid;
 	border-radius: 25px;
-    border-color: purple;
+    border-color: black;
     text-align: left;
     overflow: hidden;
     min-height: 140px;
