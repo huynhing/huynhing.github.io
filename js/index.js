@@ -56,9 +56,6 @@ function about() {
                 $(".mess h1").fadeIn(150);
                 $(".mess h1").text('About Me');
                 $("#content-wrapper").fadeIn(150).load("../about.html", function() {
-                    if(clicked_emoji) {
-                        $('#clickable').hide();
-                    }
                     $('.fademe').fadeIn(150);   
                 });
             });
@@ -148,7 +145,7 @@ var health = "HOLDER FOR HEALTH";
 
 function test(hobby) {
     if(current_hobby == null && hobby != null) {
-        $('#clickable').fadeOut('fast', function() {
+        $('#clickable').fadeOut('slow', function() {
             $(div_begin + cw + cw2 + hobby + div_end + div_end + div_end).hide().appendTo('#content').fadeIn(500);
             $('html,body').animate({scrollTop: $("#divider").offset().top}, 'slow');
             clicked_emoji = true;
@@ -160,6 +157,7 @@ function test(hobby) {
             $(this).empty();
             $(this).remove();
             current_hobby = null;
+            $('#clickable').fadeIn(500);
         });
     } else if(current_hobby != hobby) {
         $('#hobby-content').fadeOut(500, function() {
