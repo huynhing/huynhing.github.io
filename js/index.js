@@ -56,6 +56,9 @@ function about() {
                 $(".mess h1").fadeIn(150);
                 $(".mess h1").text('About Me');
                 $("#content-wrapper").fadeIn(150).load("../about.html", function() {
+                    if(clicked_emoji) {
+                        $('#clickable').hide();
+                    }
                     $('.fademe').fadeIn(150);   
                 });
             });
@@ -131,20 +134,22 @@ var div_begin = "<div id='divider'>";
 var ball = "<img id='lakers' src='../img/lakers.png'>";
 var content = "<p>Favorite Team: Los Angeles Lakers</p><p>Favorite Players: Kobe Bryant & Pau Gasol</p><p>Basketball Arenas Visited: Staples Center, Oracle Arena</p><p>Potential Future Lakers Season Ticket Holder</p>";
 var div_end = "</div>";
+var clicked_emoji = false;
+
 
 function test() {
     if($('#divider').length == 0) {
-        $(div_begin + ball + content+ div_end).hide().appendTo('#content').fadeIn(500);
-        $('html,body').animate({
-        scrollTop: $("#divider").offset().top},
-        'slow');
+        $('#clickable').fadeOut('fast', function() {
+            $(div_begin + ball + content+ div_end).hide().appendTo('#content').fadeIn(500);
+            $('html,body').animate({scrollTop: $("#divider").offset().top},'slow');
+            clicked_emoji = true;
+        });
     } else {
         $('html,body').animate({
-        scrollTop: $(".all").offset().top},
-        150);
+        scrollTop: $(".all").offset().top},150);
         $('#divider').fadeOut(500, function() {
-                    $(this).empty();
-                    $(this).remove();
+            $(this).empty();
+            $(this).remove();
         });
     }
 }
