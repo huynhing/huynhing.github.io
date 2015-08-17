@@ -108,6 +108,10 @@ function projects() {
     $("#contact").attr('onclick', 'contact();');
 }
 
+function resume() {
+    window.open("../files/resume.pdf", '_blank');   
+}
+
 function contact() {
     $('.fademe').fadeOut(150, function() {
         $("#content-wrapper").fadeOut(150, function() {
