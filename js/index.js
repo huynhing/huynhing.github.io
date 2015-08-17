@@ -131,25 +131,41 @@ function contact() {
 }
 
 var div_begin = "<div id='divider'>";
-var ball = "<img id='lakers' src='../img/lakers.png'>";
-var content = "<p>Favorite Team: Los Angeles Lakers</p><p>Favorite Players: Kobe Bryant & Pau Gasol</p><p>Basketball Arenas Visited: Staples Center, Oracle Arena</p><p>Potential Future Lakers Season Ticket Holder</p>";
 var div_end = "</div>";
+var cw = "<div id='hobby-content'>";
+var cw2 = "<div id='hobby-content2'>";
 var clicked_emoji = false;
+var current_hobby = null;
+var bball = "<img src='../img/lakers.png'><p>Favorite Team: Los Angeles Lakers</p><p>Favorite Players: Kobe Bryant & Pau Gasol</p><p>Basketball Arenas Visited: Staples Center, Oracle Arena</p><p>Potential Future Lakers Season Ticket Holder</p>";
+var piano = "<img src='../img/pianoplaying.jpg'>";
+var cars = "<img src='../img/car.jpg'>";
+var tech = "HOLDER FOR TECH";
+var food = "HOLDER FOR FOOD";
+//href="files/sleeping.gif"
+var health = "HOLDER FOR HEALTH";
 
 
-function test() {
-    if($('#divider').length == 0) {
+
+function test(hobby) {
+    if(current_hobby == null && hobby != null) {
         $('#clickable').fadeOut('fast', function() {
-            $(div_begin + ball + content+ div_end).hide().appendTo('#content').fadeIn(500);
-            $('html,body').animate({scrollTop: $("#divider").offset().top},'slow');
+            $(div_begin + cw + cw2 + hobby + div_end + div_end + div_end).hide().appendTo('#content').fadeIn(500);
+            $('html,body').animate({scrollTop: $("#divider").offset().top}, 'slow');
             clicked_emoji = true;
+            current_hobby = hobby;
         });
-    } else {
-        $('html,body').animate({
-        scrollTop: $(".all").offset().top},150);
+    } else if(current_hobby == hobby) {
+        $('html,body').animate({scrollTop: $(".all").offset().top}, 'slow');
         $('#divider').fadeOut(500, function() {
             $(this).empty();
             $(this).remove();
+            current_hobby = null;
+        });
+    } else if(current_hobby != hobby) {
+        $('#hobby-content').fadeOut(500, function() {
+            $('#hobby-content2').replaceWith(cw2 + hobby + div_end);
+            $('#hobby-content').fadeIn(500);
+            current_hobby = hobby;
         });
     }
 }
