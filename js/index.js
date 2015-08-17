@@ -65,6 +65,7 @@ function about() {
     $("#home").attr('onclick', 'home();');
     $("#projects").attr('onclick', 'projects();');
     $("#contact").attr('onclick', 'contact();');
+    current_hobby = null;
 }
 
 function home() {
@@ -131,7 +132,6 @@ var div_begin = "<div id='divider'>";
 var div_end = "</div>";
 var cw = "<div id='hobby-content'>";
 var cw2 = "<div id='hobby-content2'>";
-var clicked_emoji = false;
 var current_hobby = null;
 var bball = "<img src='../img/lakers.png'><p>Favorite Team: Los Angeles Lakers</p><p>Favorite Players: Kobe Bryant & Pau Gasol</p><p>Basketball Arenas Visited: Staples Center, Oracle Arena</p><p>Potential Future Lakers Season Ticket Holder</p>";
 var piano = "<img src='../img/pianoplaying.jpg'>";
@@ -148,7 +148,6 @@ function test(hobby) {
         $('#clickable').fadeOut('slow', function() {
             $(div_begin + cw + cw2 + hobby + div_end + div_end + div_end).hide().appendTo('#content').fadeIn(500);
             $('html,body').animate({scrollTop: $("#divider").offset().top}, 'slow');
-            clicked_emoji = true;
             current_hobby = hobby;
         });
     } else if(current_hobby == hobby) {
