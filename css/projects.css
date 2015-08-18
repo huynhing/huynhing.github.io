@@ -60,6 +60,7 @@
 	border-radius: 25px;
     margin: 20px;    
 	background-color: #F5F5F5;
+    min-height: 60px;
 }
 
 .mess h1 {
