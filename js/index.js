@@ -109,8 +109,18 @@ function projects() {
     $("#contact").attr('onclick', 'contact();');
 }
 
+var tries = 0;
+//Basic resume password protection
 function resume() {
-    window.open("../files/resume.pdf", '_blank');   
+    var pass = prompt("Please enter the password", "test");
+    //Congratulations, you were smart enough to read my code for the password.
+    //I plan on changing this up in the future.
+    if (pass == "I am a Huynher." || tries == 3) {
+        window.open("../files/resume.pdf", '_blank');   
+    } else {
+        tries++;
+        alert("You have entered the password incorrectly " + tries + " times. Please try again or email me for the password. If you keep on trying you might be able to get in.....");   
+    }
 }
 
 function contact() {
@@ -162,7 +172,7 @@ function expand(hobbylink) {
                 $('#hobby-content2').replaceWith(cw2 + hobby + div_end);
                 $('#hobby-content').fadeIn(300);
                 current_hobby = hobby;
-                $('html,body').animate({scrollTop: $("footer").offset().top}, 'slow');
+                $('html,body').animate({scrollTop: $("#emojis").offset().top}, 'slow');
             });
         }
     });
