@@ -137,20 +137,19 @@ var div_end = "</div>";
 var cw = "<div id='hobby-content'>";
 var cw2 = "<div id='hobby-content2'>";
 var current_hobby = null;
-var bball = "<img src='../img/lakers.png'><p>Favorite Team: Los Angeles Lakers</p><p>Favorite Players: Kobe Bryant & Pau Gasol</p><p>Basketball Arenas Visited: Staples Center, Oracle Arena</p><p>Potential Future Lakers Season Ticket Holder</p>";
-var piano = "<img src='../img/pianoplaying.jpg'>";
-var cars = "<img src='../img/car.jpg'>";
-var tech = "HOLDER FOR TECH";
-var food = "HOLDER FOR FOOD";
-//href="files/sleeping.gif"
-var health = "HOLDER FOR HEALTH";
+var bball = "<h1>Ball Is Life</h1></p><img src='../img/lakers.png' style='width: 40%'><p>Being born and raised in Southern California, I am naturally a die-hard Lakers fan. Although the Lakers are going through a rough patch right now, they have a solid, promising young core in Randle, Russell, and Clarkson.</p><p>I've played basketball since I was 8, but I am no Kobe. My offensive skills are quite limited, but I try to contribute as much as possible through off ball movement. I focus most of my energy on the defensive end and I pride myself in that.</p><p>If you ever want to talk about basketball or play a pick up game, feel free to contact me!</p>";
+var piano = "<h1>Piano</h1><img id='image' src='../img/pianoplaying.jpg' style='width: 80%'><p>I have been studying and playing piano for as long as I can remember. Due to my terrible piano performance nerves, I only enjoy playing for myself. For 7th through 12th grade, I attended OCHSA with Piano as my main art/focus.</p><p>I love playing pieces from the Romantic to late Romantic era and anything that is composed by Chopin. My favorite piano pieces are </p><a href='https://www.youtube.com/watch?v=GETFcTMU1JA' target='_blank'>Improvisation No. 15 in C Minor by Poulenc </a><span>and </span><a href='https://www.youtube.com/watch?v=YGRO05WcNDk' target='_black'>Nocturne Op. 9 No. 2 by Chopin</a><span>.</span>";
+var cars = "<h1>Fast and Furious</h1><img id='image' src='../img/car.jpg' style='width: 80%'><p>I absolutely love driving! There's something about it that makes me feel very relaxed. I am an avid car enthusiast and enjoy working on my car.</p><p>One day I eventually want to own a R34 Nissan GTR or a MKIV Toyota Supra (or both!). I am currently driving a Honda Civic Si and am working on making it track ready. To see what I have done to my car and my past cars, click on the following link.</p><a onclick='car();'>To my garage!</a>";
+var tech = "<h1>Technology</h1>";
+var food = "<h1>Food</h1>";
+var finance = "<h1>Finance and Investments</h1>";
 
 
 
-function test(hobby) {
-    if(current_hobby == null && hobby != null) {
-        $('#clickable').fadeOut('slow', function() {
-            $(div_begin + cw + cw2 + hobby + div_end + div_end + div_end).hide().appendTo('#content').fadeIn(500);
+function expand(hobby) {
+    if(current_hobby == null) {
+        $('#clickable').fadeOut(300, function() {
+            $(div_begin + cw + cw2 + hobby + div_end + div_end + div_end).hide().appendTo('#content').fadeIn(300);
             $('html,body').animate({scrollTop: $("#divider").offset().top}, 'slow');
             current_hobby = hobby;
         });
@@ -160,13 +159,14 @@ function test(hobby) {
             $(this).empty();
             $(this).remove();
             current_hobby = null;
-            $('#clickable').fadeIn(500);
+            $('#clickable').fadeIn(400);
         });
     } else if(current_hobby != hobby) {
-        $('#hobby-content').fadeOut(500, function() {
+        $('#hobby-content').fadeOut(300, function() {
             $('#hobby-content2').replaceWith(cw2 + hobby + div_end);
-            $('#hobby-content').fadeIn(500);
+            $('#hobby-content').fadeIn(300);
             current_hobby = hobby;
+            $('html,body').animate({scrollTop: $("footer").offset().top}, 'slow');
         });
     }
 }
