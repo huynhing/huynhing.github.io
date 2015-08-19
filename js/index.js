@@ -6,28 +6,27 @@ function preload_spinner() {
 }
 
 function preload(callback) {
-    var path = "../img/about/";
-    var arrayofimages = ["under-construction.jpg",
-    		"piano/pianoplaying.jpg", 
-            "car/car2.jpg", 
-            "basketball/lakers.png", 
-            "me.jpg", 
-            "emojis/phone.png", 
-            "emojis/computer.png", 
-            "emojis/pho.png", 
-            "emojis/basketball.png", 
-            "emojis/sushi.png", 
-            "emojis/burger.png", 
-            "emojis/money.png",
-            "emojis/finance.png",
-            "emojis/pizza.png", 
-            "emojis/car.png", 
-            "emojis/tool.png", 
-            "emojis/jdm.png", 
-            "emojis/piano.png"];
+    var arrayofimages = ["../img/under-construction.jpg",
+    		"../img/about/piano/pianoplaying.jpg", 
+            "../img/about/car/car2.jpg", 
+            "../img/about/basketball/lakers.png", 
+            "../img/me.jpg", 
+            "../img/about/emojis/phone.png", 
+            "../img/about/emojis/computer.png", 
+            "../img/about/emojis/pho.png", 
+            "../img/about/emojis/basketball.png", 
+            "../img/about/emojis/sushi.png", 
+            "../img/about/emojis/burger.png", 
+            "../img/about/emojis/money.png",
+            "../img/about/emojis/finance.png",
+            "../img/about/emojis/pizza.png", 
+            "../img/about/emojis/car.png", 
+            "../img/about/emojis/tool.png", 
+            "../img/about/emojis/jdm.png", 
+            "../img/about/emojis/piano.png"];
     for(i=0; i < arrayofimages.length; i++) {
         images[i+1] = new Image();
-        images[i+1].src = path + arrayofimages[i];
+        images[i+1].src = arrayofimages[i];
     }
     if (callback && typeof(callback) === "function") {
         callback();
