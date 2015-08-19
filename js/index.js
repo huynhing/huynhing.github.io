@@ -195,7 +195,7 @@ function expand(hobbylink) {
                     $('#image').attr({
                         src: hobby[1],
                         style: hobby[2]
-                    }).fadeIn('fast');
+                    });
                     $('#text').hide().html(hobby[3]).fadeIn('slow');
                 } else {
                     $('#text').hide().html(hobby[1]).fadeIn('slow');   
@@ -223,7 +223,8 @@ function expand(hobbylink) {
                     $(this).attr({
                         src: hobby[1],
                         style: hobby[2]
-                        }).fadeIn('fast');
+                        });
+//                    $('#image').html("<img id='image'" + "src='"+ hobby[1] + "'" + "style='" + hobby[2] + "'" + ">").fadeIn('slow');
                 });
                 $('#text').fadeOut('slow', function() {
                     $(this).html(hobby[3]).fadeIn('slow');
