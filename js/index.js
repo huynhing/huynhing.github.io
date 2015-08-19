@@ -158,7 +158,7 @@ function expand(hobbylink) {
         hobby = response;
         if(current_hobby == null) {
             $('#clickable').fadeOut(300, function() {
-                $(div_begin + cw + cw2 + hobby + div_end + div_end + div_end).hide().appendTo('#content').fadeIn(300);
+                $(div_begin + cw + cw2 + hobby + div_end + div_end + div_end).hide().appendTo('#content').fadeIn('slow');
                 $('html,body').animate({scrollTop: $("#divider").offset().top}, 'slow');
                 current_hobby = hobby;
             });
@@ -173,7 +173,7 @@ function expand(hobbylink) {
         } else if(current_hobby != hobby) {
             $('#hobby-content').fadeOut(300, function() {
                 $('#hobby-content2').replaceWith(cw2 + hobby + div_end);
-                $('#hobby-content').fadeIn(300);
+                $('#hobby-content').fadeIn('slow');
                 current_hobby = hobby;
                 $('html,body').animate({scrollTop: $("#divider").offset().top}, 'slow');
             });
