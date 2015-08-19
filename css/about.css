@@ -119,16 +119,19 @@ footer {
 }
 
 #divider h1 {
-    padding-top: 10px;
+    padding-top: 5px;
     padding-bottom: 10px;
     font-weight: 400;
-    border-bottom: 1px solid #C0C0C0;
+}
+
+#hobby-content {
+    border-top: 1px solid #C0C0C0;
 }
 
 #divider {
     margin-left: 300px;
     margin-right: 300px;
-    min-height: 500px;
+    min-height: 550px;
 }
 
 #divider p {

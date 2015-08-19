@@ -152,8 +152,8 @@ var cw = "<div id='hobby-content'>";
 var cw2 = "<div id='hobby-content2'>";
 var current_hobby = null;
 
-
-function expand(hobbylink) {
+//This version needs fixing.
+function expand2(hobbylink) {
     $.get(hobbylink, function(response) {
         hobby = response;
         if(current_hobby == null) {
@@ -171,57 +171,118 @@ function expand(hobbylink) {
                 $('#clickable').fadeIn(400);
             });
         } else if(current_hobby != hobby) {
-            $('#hobby-content').fadeOut(300, function() {
+            $('#hobby-content').fadeOut('fast', function() {
                 $('#hobby-content2').replaceWith(cw2 + hobby + div_end);
                 $('#hobby-content').fadeIn('slow');
                 current_hobby = hobby;
-                $('html,body').animate({scrollTop: $("#divider").offset().top}, 'slow');
+//                $('html,body').animate({scrollTop: $("footer").offset().top}, 'fast');
             });
         }
     });
 }
 
-////Credit --> Fisher-Yates Shuffle
-//function shuffle(array) {
-//  var currentIndex = array.length, temporaryValue, randomIndex ;
-//
-//  // While there remain elements to shuffle...
-//  while (0 !== currentIndex) {
-//
-//    // Pick a remaining element...
-//    randomIndex = Math.floor(Math.random() * currentIndex);
-//    currentIndex -= 1;
-//
-//    // And swap it with the current element.
-//    temporaryValue = array[currentIndex];
-//    array[currentIndex] = array[randomIndex];
-//    array[randomIndex] = temporaryValue;
-//  }
-//
-//  return array;
-//}
-//
-//var facts = [];
-//$.get('about/RandomFacts', function(response) {
-//    facts = response.split("\n");
-//});
-//
-//function rand_fact() {
-//    facts = shuffle(facts);
-//    if (facts.length === 0) {
-//        $('#randfact').fadeOut('slow', function() {
-//            $(this).remove();
-//            $('#fact').append("<span>You've gone through all of them!</span>");
-//        });
-//    } else {
-//        var num = Math.floor((Math.random() * facts.length));
-//        if ($('#randfact').length != 0) {
-//            $('#randfact').fadeOut('slow', function() {
-//                $(this).remove();
-//                $('#fact').append(facts.pop());
-//            });
-//        } else {
-//            $('#fact').append(facts.pop());
-//        }
-//    }
-//}
+function expand(hobbylink) {
+    $.get(hobbylink, function(response) {
+        hobby2 = response;
+        hobby = hobby2.split("\n");
+        if(current_hobby == null) {
+            $('#clickable').fadeOut(300, function() {
+                $('#temp').attr('id', 'divider');
+                $('#divider h1').hide().text(hobby[0]).fadeIn('slow');
+                if(hobby.length > 2) {
+//                    $('#image').attr('src', hobby[1]).fadeIn('slow');
+//                    $('#image').attr('style', hobby[2]);
+                    $('#image').attr({
+                        src: hobby[1],
+                        style: hobby[2]
+                    }).fadeIn('fast');
+                    $('#text').hide().html(hobby[3]).fadeIn('slow');
+                } else {
+                    $('#text').hide().html(hobby[1]).fadeIn('slow');   
+                }
+                $('html,body').animate({scrollTop: $("#fact").offset().top}, 'slow');
+                current_hobby = hobby2;
+            });
+        } else if(current_hobby == hobby2) {
+            $('html,body').animate({scrollTop: $(".all").offset().top}, 'slow');
+            $('#divider').fadeOut(500, function() {
+                $(this).empty();
+                $(this).remove();
+                current_hobby = null;
+                $('#content').append("<div id='temp'><h1></h1><div id='hobby-content'><img id='image'><p id='text'></p></div></div>");
+                $('#clickable').fadeIn(400);
+            });
+        } else if(current_hobby != hobby2) {
+            $('#divider h1').fadeOut('slow', function() {
+                $(this).text(hobby[0]).fadeIn('slow');
+            });
+            if(hobby.length > 2) {
+                $('#image').fadeOut('slow', function() {
+//                    $(this).attr('src', hobby[1]).fadeIn('slow');
+//                    $(this).attr('style', hobby[2]);
+                    $(this).attr({
+                        src: hobby[1],
+                        style: hobby[2]
+                        }).fadeIn('fast');
+                });
+                $('#text').fadeOut('slow', function() {
+                    $(this).html(hobby[3]).fadeIn('slow');
+                });
+            } else if (hobby.length == 2) {
+                $('#image').fadeOut('slow', function() {
+                    $(this).attr('src', '');
+                    $(this).attr('style', '');
+                });
+                $('#text').fadeOut('slow', function() {
+                    $(this).html(hobby[1]).fadeIn('slow');
+                });
+            }
+            current_hobby = hobby2;
+        }
+    });
+}
+
+//Credit --> Fisher-Yates Shuffle
+function shuffle(array) {
+  var currentIndex = array.length, temporaryValue, randomIndex ;
+
+  // While there remain elements to shuffle...
+  while (0 !== currentIndex) {
+
+    // Pick a remaining element...
+    randomIndex = Math.floor(Math.random() * currentIndex);
+    currentIndex -= 1;
+
+    // And swap it with the current element.
+    temporaryValue = array[currentIndex];
+    array[currentIndex] = array[randomIndex];
+    array[randomIndex] = temporaryValue;
+  }
+
+  return array;
+}
+
+var facts = [];
+$.get('about/RandomFacts', function(response) {
+    facts = response.split("\n");
+});
+
+function rand_fact() {
+    facts = shuffle(facts);
+    if (facts.length === 0) {
+        $('#randfact').fadeOut('slow', function() {
+            $(this).remove();
+            $('#fact').append("<span>You've gone through all of them!</span>");
+        });
+    } else {
+        var num = Math.floor((Math.random() * facts.length));
+        if ($('#randfact').length != 0) {
+            $('#randfact').fadeOut('slow', function() {
+                $(this).remove();
+                $('#fact').append(facts.pop());
+            });
+        } else {
+            $('#fact').append(facts.pop());
+        }
+    }
+}
