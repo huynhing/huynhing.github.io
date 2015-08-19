@@ -230,8 +230,10 @@ function expand(hobbylink) {
                 });
             } else if (hobby.length == 2) {
                 $('#image').fadeOut('slow', function() {
-                    $(this).attr('src', '');
-                    $(this).attr('style', '');
+                    $(this).removeAttr('src');
+                    $(this).removeAttr('style');
+//                    $(this).attr('src', '');
+//                    $(this).attr('style', '');
                 });
                 $('#text').fadeOut('slow', function() {
                     $(this).html(hobby[1]).fadeIn('slow');
