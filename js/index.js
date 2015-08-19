@@ -115,7 +115,7 @@ function resume() {
     var pass = prompt("Please enter the password", "Enter password here");
     //Congratulations, you were smart enough to read my code for the password.
     //I plan on changing this up in the future.
-    if (pass == null) {
+    if (!pass) {
         alert('You did not enter a password.');
     }
     else if (pass == "I am a Huynher." || tries == 3) {
