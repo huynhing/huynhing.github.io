@@ -67,6 +67,7 @@ function about() {
     $("#projects").attr('onclick', 'projects();');
     $("#contact").attr('onclick', 'contact();');
     current_hobby = null;
+    facts = [];
 }
 
 function home() {
