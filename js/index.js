@@ -211,7 +211,7 @@ function rand_fact() {
     if (facts.length === 0) {
         $('#randfact').fadeOut('slow', function() {
             $(this).remove();
-            $('#fact').append('<span>No more facts to show.</span>');
+            $('#fact').append("<span>You've gone through all of them!</span>");
         });
     } else {
         var num = Math.floor((Math.random() * facts.length));
