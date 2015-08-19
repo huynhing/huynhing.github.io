@@ -153,13 +153,13 @@ var cw2 = "<div id='hobby-content2'>";
 var current_hobby = null;
 
 //This version needs fixing.
-function expand2(hobbylink) {
+function expand(hobbylink) {
     $.get(hobbylink, function(response) {
         hobby = response;
         if(current_hobby == null) {
             $('#clickable').fadeOut(300, function() {
                 $(div_begin + cw + cw2 + hobby + div_end + div_end + div_end).hide().appendTo('#content').fadeIn('slow');
-                $('html,body').animate({scrollTop: $("#divider").offset().top}, 'slow');
+                $('html,body').animate({scrollTop: $("#fact").offset().top}, 'slow');
                 current_hobby = hobby;
             });
         } else if(current_hobby == hobby) {
@@ -181,70 +181,70 @@ function expand2(hobbylink) {
     });
 }
 
-function expand(hobbylink) {
-    $.get(hobbylink, function(response) {
-        hobby2 = response;
-        hobby = hobby2.split("\n");
-        if(current_hobby == null) {
-            $('#clickable').fadeOut(300, function() {
-                $('#temp').attr('id', 'divider');
-                $('#divider h1').hide().text(hobby[0]).fadeIn('slow');
-                if(hobby.length > 2) {
-//                    $('#image').attr('src', hobby[1]).fadeIn('slow');
-//                    $('#image').attr('style', hobby[2]);
-                    $('#image').attr({
-                        src: hobby[1],
-                        style: hobby[2]
-                    });
-                    $('#text').hide().html(hobby[3]).fadeIn('slow');
-                } else {
-                    $('#text').hide().html(hobby[1]).fadeIn('slow');   
-                }
-                $('html,body').animate({scrollTop: $("#fact").offset().top}, 'slow');
-                current_hobby = hobby2;
-            });
-        } else if(current_hobby == hobby2) {
-            $('html,body').animate({scrollTop: $(".all").offset().top}, 'slow');
-            $('#divider').fadeOut(500, function() {
-                $(this).empty();
-                $(this).remove();
-                current_hobby = null;
-                $('#content').append("<div id='temp'><h1></h1><div id='hobby-content'><img id='image'><p id='text'></p></div></div>");
-                $('#clickable').fadeIn(400);
-            });
-        } else if(current_hobby != hobby2) {
-            $('#divider h1').fadeOut('slow', function() {
-                $(this).text(hobby[0]).fadeIn('slow');
-            });
-            if(hobby.length > 2) {
-                $('#image').fadeOut('slow', function() {
-//                    $(this).attr('src', hobby[1]).fadeIn('slow');
-//                    $(this).attr('style', hobby[2]);
-                    $(this).attr({
-                        src: hobby[1],
-                        style: hobby[2]
-                        });
-//                    $('#image').html("<img id='image'" + "src='"+ hobby[1] + "'" + "style='" + hobby[2] + "'" + ">").fadeIn('slow');
-                });
-                $('#text').fadeOut('slow', function() {
-                    $(this).html(hobby[3]).fadeIn('slow');
-                });
-            } else if (hobby.length == 2) {
-                $('#image').fadeOut('slow', function() {
-                    $(this).replaceWith("<img id='image'>");
-//                    $(this).removeAttr('src');
-//                    $(this).removeAttr('style');
-//                    $(this).attr('src', '');
-//                    $(this).attr('style', '');
-                });
-                $('#text').fadeOut('slow', function() {
-                    $(this).html(hobby[1]).fadeIn('slow');
-                });
-            }
-            current_hobby = hobby2;
-        }
-    });
-}
+//function expand(hobbylink) {
+//    $.get(hobbylink, function(response) {
+//        hobby2 = response;
+//        hobby = hobby2.split("\n");
+//        if(current_hobby == null) {
+//            $('#clickable').fadeOut(300, function() {
+//                $('#temp').attr('id', 'divider');
+//                $('#divider h1').hide().text(hobby[0]).fadeIn('slow');
+//                if(hobby.length > 2) {
+////                    $('#image').attr('src', hobby[1]).fadeIn('slow');
+////                    $('#image').attr('style', hobby[2]);
+//                    $('#image').attr({
+//                        src: hobby[1],
+//                        style: hobby[2]
+//                    });
+//                    $('#text').hide().html(hobby[3]).fadeIn('slow');
+//                } else {
+//                    $('#text').hide().html(hobby[1]).fadeIn('slow');   
+//                }
+//                $('html,body').animate({scrollTop: $("#fact").offset().top}, 'slow');
+//                current_hobby = hobby2;
+//            });
+//        } else if(current_hobby == hobby2) {
+//            $('html,body').animate({scrollTop: $(".all").offset().top}, 'slow');
+//            $('#divider').fadeOut(500, function() {
+//                $(this).empty();
+//                $(this).remove();
+//                current_hobby = null;
+//                $('#content').append("<div id='temp'><h1></h1><div id='hobby-content'><img id='image'><p id='text'></p></div></div>");
+//                $('#clickable').fadeIn(400);
+//            });
+//        } else if(current_hobby != hobby2) {
+//            $('#divider h1').fadeOut('slow', function() {
+//                $(this).text(hobby[0]).fadeIn('slow');
+//            });
+//            if(hobby.length > 2) {
+//                $('#image').fadeOut('slow', function() {
+////                    $(this).attr('src', hobby[1]).fadeIn('slow');
+////                    $(this).attr('style', hobby[2]);
+//                    $(this).attr({
+//                        src: hobby[1],
+//                        style: hobby[2]
+//                        });
+////                    $('#image').html("<img id='image'" + "src='"+ hobby[1] + "'" + "style='" + hobby[2] + "'" + ">").fadeIn('slow');
+//                });
+//                $('#text').fadeOut('slow', function() {
+//                    $(this).html(hobby[3]).fadeIn('slow');
+//                });
+//            } else if (hobby.length == 2) {
+//                $('#image').fadeOut('slow', function() {
+//                    $(this).replaceWith("<img id='image'>");
+////                    $(this).removeAttr('src');
+////                    $(this).removeAttr('style');
+////                    $(this).attr('src', '');
+////                    $(this).attr('style', '');
+//                });
+//                $('#text').fadeOut('slow', function() {
+//                    $(this).html(hobby[1]).fadeIn('slow');
+//                });
+//            }
+//            current_hobby = hobby2;
+//        }
+//    });
+//}
 
 //Credit --> Fisher-Yates Shuffle
 function shuffle(array) {
