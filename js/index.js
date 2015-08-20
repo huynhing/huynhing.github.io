@@ -152,13 +152,13 @@ var cw = "<div id='hobby-content'>";
 var cw2 = "<div id='hobby-content2'>";
 var current_hobby = null;
 
-//This version needs fixing.
+//Margin issues?
 function expand(hobbylink) {
     $.get(hobbylink, function(response) {
         hobby = response;
         if(current_hobby == null) {
             $('#clickable').fadeOut(300, function() {
-                $(div_begin + cw + cw2 + hobby + div_end + div_end + div_end).hide().appendTo('#content').fadeIn('slow');
+                $(div_begin + cw + cw2 + hobby + div_end + div_end + div_end).hide().appendTo('#content').fadeIn(400);
                 $('html,body').animate({scrollTop: $("#fact").offset().top}, 'slow');
                 current_hobby = hobby;
             });
@@ -171,11 +171,11 @@ function expand(hobbylink) {
                 $('#clickable').fadeIn(400);
             });
         } else if(current_hobby != hobby) {
-            $('#hobby-content').fadeOut('fast', function() {
+            $('#hobby-content').fadeOut(400, function() {
                 $('#hobby-content2').replaceWith(cw2 + hobby + div_end);
-                $('#hobby-content').fadeIn('slow');
+                $('#hobby-content').fadeIn(400);
                 current_hobby = hobby;
-//                $('html,body').animate({scrollTop: $("footer").offset().top}, 'fast');
+                $('html,body').animate({scrollTop: $("#fact").offset().top}, 'slow');
             });
         }
     });
