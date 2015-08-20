@@ -83,6 +83,25 @@ footer {
     padding-bottom: 10px;
 }
 
+#content h2, h3 {
+    font-weight: normal;
+}
+
+#content h3 {
+    line-height: 50px;   
+}
+
+#content a {
+    cursor: pointer;
+    font-size: 20px;
+    line-height: 20px;
+    color: #3366FF;
+    margin: 2px auto;
+    padding-right: 15px;
+    padding-left: 15px;
+    border-right: 2px solid black;
+    border-left: 2px solid black;
+}
 
 
 
