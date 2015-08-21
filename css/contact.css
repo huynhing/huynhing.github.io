@@ -1,3 +1,7 @@
+body {
+    background-color: #F0F8FF;   
+}
+
 .all {
 	font-family: 'Lucida Grande', 'Lucida Sans Unicode', 'Lucida Sans', Geneva, Verdana, sans-serif;
     text-align: center;
@@ -60,7 +64,7 @@
 	border: 3px solid;
 	border-radius: 25px;
     margin: 20px;
-	background-color: #F5F5F5;
+	background-color: white;
     min-height: 60px;
 }
 
