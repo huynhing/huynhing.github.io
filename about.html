@@ -7,8 +7,12 @@
    <p>Hometown: Garden Grove</p>
    <p>Undergraduate: UC Berkeley - Computer Science</p>
    <p>High School: Orange County High School of the Arts</p>
-   <p id='fact'>Random Thing About Me <span onclick="rand_fact();" id='fact_click'>(click)</span>: </p>
-   <script type="text/javascript">rand_fact();</script>
+   <div id='fact-wrapper'>
+       <p id='fact'>Random Thing About Me Generator
+            <a onclick="rand_fact();" id='fact_click'>(click)</a>
+       </p>
+       <script type="text/javascript">rand_fact();</script>
+   </div>
    <p id='test'>Hobbies:
        <span id="emojis">
        <a id="bball" onclick="expand('about/Basketball');">
@@ -37,18 +41,8 @@
             <img src="img/about/emojis/money.png">
        </a>
        </span>
-       <p id="clickable">^^The emojis are clickable!</p>
+       <p id="clickable">^^The emojis are clickable</p>
    </p>
    </div>
-
-<!--
-    <div id='temp'>
-        <h1></h1>
-        <div id='hobby-content'>
-        <img id='image'>
-        <p id='text'></p>
-        </div>
-    </div>
--->
        
    </div> 

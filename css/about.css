@@ -131,7 +131,7 @@ footer {
 #divider {
     margin-left: 300px;
     margin-right: 300px;
-    min-height: 550px;
+    min-height: 437px;
 }
 
 #divider p {
@@ -152,6 +152,10 @@ footer {
 #fact_click {
     cursor: pointer;
     color: #3366FF;
+}
+
+#randfact {
+    font-style: italic;   
 }
 
 

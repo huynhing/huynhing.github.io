@@ -83,12 +83,14 @@ footer {
     padding-bottom: 10px;
 }
 
-#content h2, h3 {
+#content h2 {
+    padding-top: 10px;
     font-weight: normal;
 }
 
 #content h3 {
-    line-height: 50px;   
+    font-weight: normal;
+    line-height: 40px;   
 }
 
 #content a {
@@ -99,8 +101,15 @@ footer {
     margin: 2px auto;
     padding-right: 15px;
     padding-left: 15px;
+    margin-bottom: 15px;
+/*
     border-right: 2px solid black;
     border-left: 2px solid black;
+*/
+}
+
+#content a:hover {
+    color: black;
 }
 
 
