@@ -6,7 +6,7 @@ function preload_spinner() {
 }
 
 function preload(callback) {
-    var arrayofimages = ["../img/under-construction.jpg",
+    var arrayofimages = ["../img/under-construction.gif",
     		"../img/about/piano/pianoplaying.jpg", 
             "../img/about/car/car2.jpg", 
             "../img/about/basketball/lakers.png", 
@@ -23,7 +23,10 @@ function preload(callback) {
             "../img/about/emojis/car.png", 
             "../img/about/emojis/tool.png", 
             "../img/about/emojis/jdm.png", 
-            "../img/about/emojis/piano.png"];
+            "../img/about/emojis/piano.png",
+            "../img/projects/car/lulu/1.jpg",
+            "../img/projects/car/sivi/1.jpg",
+            "../img/projects/car/sivi/2.jpg"];
     for(i=0; i < arrayofimages.length; i++) {
         images[i+1] = new Image();
         images[i+1].src = arrayofimages[i];
@@ -89,7 +92,7 @@ function home() {
     $("#contact").attr('onclick', 'contact();');
 }
 
-function projects() {
+function projects(callback) {
     $('.fademe').fadeOut(150, function() {
         $("#content-wrapper").fadeOut(150, function() {
             $("#content").remove();
@@ -98,7 +101,10 @@ function projects() {
                 $(".mess h1").fadeIn(150);
                 $(".mess h1").text('Projects');
                 $("#content-wrapper").fadeIn(150).load("../projects.html", function() {
-                    $('.fademe').fadeIn(150);   
+                    $('.fademe').fadeIn(150);
+                    if (callback && typeof(callback) === "function") {
+                        callback();   
+                    }
                 });
             });
         });
@@ -109,16 +115,27 @@ function projects() {
     $("#contact").attr('onclick', 'contact();');
 }
 
+
+String.prototype.hashCode = function() {
+  var hash = 0, i, chr, len;
+  if (this.length == 0) return hash;
+  for (i = 0, len = this.length; i < len; i++) {
+    chr   = this.charCodeAt(i);
+    hash  = ((hash << 5) - hash) + chr;
+    hash |= 0; // Convert to 32bit integer
+  }
+  return hash;
+};
+
 var tries = 0;
 //Basic resume password protection
 function resume() {
     var pass = prompt("Please enter the password", "Enter password here");
-    //Congratulations, you were smart enough to read my code for the password.
-    //I plan on changing this up in the future.
+    //You're trying to see what the password is. Smart.
     if (!pass) {
         alert('You did not enter a password.');
     }
-    else if (pass == "I am a Huynher." || tries == 3) {
+    else if (pass.hashCode() == -426800532 || tries == 3) {
         window.open("../files/resume.pdf", '_blank');   
     } else {
         tries++;
@@ -152,7 +169,6 @@ var cw = "<div id='hobby-content'>";
 var cw2 = "<div id='hobby-content2'>";
 var current_hobby = null;
 
-//Margin issues?
 function expand(hobbylink) {
     $.get(hobbylink, function(response) {
         hobby = response;
@@ -224,4 +240,45 @@ function rand_fact() {
             $('#fact').append("<p id='randfact'>" + facts.pop() + "</p>");
         }
     }
+}
+
+var curr_car = null;
+function carproj() {
+    if(curr_car != null) {
+        $('html,body').animate({scrollTop: $(".nav").offset().top}, 500);
+        $('#specificproj').fadeOut(500, function() {
+            curr_car = null;
+            $('#specificproj').empty();
+            $('#specificproj').remove();
+            $('#intro').fadeIn(500);
+        });
+    } else {
+        $('#content').append("<div id='specificproj'></div>");
+         $.get('../projects/cars/sivi', function(response) {
+            curr_car = response;
+            $('#intro').fadeOut(500, function () {
+                var wrap = "<div id='projcontent'>"
+                var head = "<h2 id='projcat'>My Garage</h2>"
+                $('#specificproj').fadeIn('fast', function() {
+                    $(head + wrap + response + div_end).hide().appendTo('#specificproj').fadeIn(500);
+                    $('html,body').animate({scrollTop: $("#carproj").offset().top}, 500);
+                });
+            });
+        });
+    }
+}
+
+function nextcar(link) {
+        $.get(link, function(response) {
+            curr_car = link;
+            $('#car').fadeOut('slow', function() {
+                $(this).remove();
+                $('#projcontent').hide().append(response).fadeIn('slow');
+            });
+        });
+        $('#specificproj').fadeIn('slow');
+}
+
+function to_garage() {
+    projects(carproj);
 }

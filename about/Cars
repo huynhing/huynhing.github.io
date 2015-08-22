@@ -3,4 +3,4 @@
 <p>I absolutely love driving! There's something about it that makes me feel relaxed.</p>
 <p>I am an avid car enthusiast and enjoy working on my car (when I have money for parts and time to install them).</p>
 <p>One day I eventually want to own a R34 Nissan GTR or a MKIV Toyota Supra (or both!!). I am currently driving a Honda Civic Si and am working on making it track ready. To see what I have done to my current car and my past cars, click on the following link.</p>
-<a onclick='car();'>To my garage!</a>
+<a onclick='to_garage();'>To my garage!</a>

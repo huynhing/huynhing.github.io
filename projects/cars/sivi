@@ -1,0 +1,11 @@
+<div id='car'>
+	<h3>
+	<a onclick=nextcar('../projects/cars/cammy');>prev</a>Honda Civic Si - Sivi<a onclick=nextcar('../projects/cars/lulu');>next</a>
+	</h3>
+	<img src='../img/projects/car/sivi/2.jpg' style='width: 40%'>
+	<p>After a successful first year of college, my parents decided it was time to move on from the Prelude, because...well...it was unsafe...</p>
+	</br>
+	<p>This is when I got my Civic Si. It was the perfect mix between my previous 2 cars. It had the sportiness of the Prelude, but also the reliability and roominess of the Camry.</p>
+	</br>
+	<p>I absolutely love this car (and every car I owned before) and there are many great memories to come with it (and mods!).</p>
+</div>
