@@ -97,6 +97,7 @@ function projects(callback) {
     $("#about").attr('onclick', 'about();');
     $("#contact").attr('onclick', 'contact();');
     curr_car = null;
+    curr_code = null;
 }
 
 
@@ -229,6 +230,38 @@ function rand_fact() {
 
 var curr_car = null;
 function carproj() {
+    if(curr_code != null || curr_car == null) {
+        if(curr_code != null) {
+            $('#specificproj').fadeOut('fast', function() {
+                curr_code = null;
+                $('#specificproj').empty();
+                $('#specificproj').remove();
+                $('#content').append("<div id='specificproj'></div>");
+             $.get('../projects/cars/sivi', function(response) {
+                curr_car = response;
+                $('#intro').fadeOut('fast', function () {
+                    var wrap = "<div id='projcontent'>"
+                    var head = "<h2 id='projcat'>My Garage</h2>"
+                    $('#specificproj').fadeIn('fast', function() {
+                        $(head + wrap + response + div_end).hide().appendTo('#specificproj').fadeIn('fast');
+                    });
+                });
+             });  
+            });
+    } else {
+         $('#content').append("<div id='specificproj'></div>");
+         $.get('../projects/cars/sivi', function(response) {
+            curr_car = response;
+            $('#intro').fadeOut('fast', function () {
+                var wrap = "<div id='projcontent'>"
+                var head = "<h2 id='projcat'>My Garage</h2>"
+                $('#specificproj').fadeIn('fast', function() {
+                    $(head + wrap + response + div_end).hide().appendTo('#specificproj').fadeIn('fast');
+                });
+            });
+         });  
+        }
+    }
     if(curr_car != null) {
         $('html,body').animate({scrollTop: $(".nav").offset().top}, 'fast');
         $('#specificproj').fadeOut('fast', function() {
@@ -237,20 +270,21 @@ function carproj() {
             $('#specificproj').remove();
             $('#intro').fadeIn(400);
         });
-    } else {
-        $('#content').append("<div id='specificproj'></div>");
-         $.get('../projects/cars/sivi', function(response) {
-            curr_car = response;
-            $('#intro').fadeOut('fast', function () {
-                var wrap = "<div id='projcontent'>"
-                var head = "<h2 id='projcat'>My Garage</h2>"
-                $('#specificproj').fadeIn('fast', function() {
-                    $(head + wrap + response + div_end).hide().appendTo('#specificproj').fadeIn('fast');
-//                    $('html,body').animate({scrollTop: $("#carproj").offset().top}, 'fast');
-                });
-            });
-        });
-    }
+    } 
+//    else {
+//        $('#content').append("<div id='specificproj'></div>");
+//         $.get('../projects/cars/sivi', function(response) {
+//            curr_car = response;
+//            $('#intro').fadeOut('fast', function () {
+//                var wrap = "<div id='projcontent'>"
+//                var head = "<h2 id='projcat'>My Garage</h2>"
+//                $('#specificproj').fadeIn('fast', function() {
+//                    $(head + wrap + response + div_end).hide().appendTo('#specificproj').fadeIn('fast');
+////                    $('html,body').animate({scrollTop: $("#carproj").offset().top}, 'fast');
+//                });
+//            });
+//        });
+//    }
 }
 
 function nextcar(link) {
@@ -266,4 +300,49 @@ function nextcar(link) {
 
 function to_garage() {
     projects(carproj);
+}
+
+var curr_code = null;
+function codeproj() {
+    if(curr_car != null || curr_code == null) {
+        if(curr_car != null) {
+            $('#specificproj').fadeOut('fast', function() {
+                curr_car = null;
+                $('#specificproj').empty();
+                $('#specificproj').remove();
+                $('#content').append("<div id='specificproj'></div>");
+             $.get('../projects/code/mygm', function(response) {
+                curr_code = response;
+                $('#intro').fadeOut('fast', function () {
+                    var wrap = "<div id='projcontent'>"
+                    var head = "<h2 id='projcat'>My Coding Projects</h2>"
+                    $('#specificproj').fadeIn('fast', function() {
+                        $(head + wrap + response + div_end).hide().appendTo('#specificproj').fadeIn('fast');
+                    });
+                });
+             });  
+            });
+    } else {
+         $('#content').append("<div id='specificproj'></div>");
+         $.get('../projects/code/mygm', function(response) {
+            curr_code = response;
+            $('#intro').fadeOut('fast', function () {
+                var wrap = "<div id='projcontent'>"
+                var head = "<h2 id='projcat'>My Coding Projects</h2>"
+                $('#specificproj').fadeIn('fast', function() {
+                    $(head + wrap + response + div_end).hide().appendTo('#specificproj').fadeIn('fast');
+                });
+            });
+         });  
+        }
+    }
+    if(curr_code != null) {
+        $('html,body').animate({scrollTop: $(".nav").offset().top}, 'fast');
+        $('#specificproj').fadeOut('fast', function() {
+            curr_code = null;
+            $('#specificproj').empty();
+            $('#specificproj').remove();
+            $('#intro').fadeIn(400);
+        });
+    } 
 }
