@@ -229,7 +229,7 @@ function rand_fact() {
 var curr_car = null;
 function carproj() {
     if(curr_car != null) {
-        $('html,body').animate({scrollTop: $(".nav").offset().top}, 500);
+        $('html,body').animate({scrollTop: $(".nav").offset().top}, 'slow');
         $('#specificproj').fadeOut(300, function() {
             curr_car = null;
             $('#specificproj').empty();
