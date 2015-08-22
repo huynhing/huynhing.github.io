@@ -1,6 +1,6 @@
 <div id='car'>
 	<h3>
-	<a onclick=nextcar('../projects/cars/lulu');>prev</a>Toyota Camry LE V6 - Cammy<a onclick=nextcar('../projects/cars/sivi');>next</a>
+	<a onclick=nextcar('../projects/cars/lulu');>prev</a>Toyota Camry LE V6 - Cammy
 	</h3>
 	<p>Sold :(</p>
 	<img src='../img/projects/car/cammy/1.jpg' style='width: 40%'>
