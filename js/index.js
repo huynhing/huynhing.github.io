@@ -113,6 +113,7 @@ function projects(callback) {
     $("#home").attr('onclick', 'home();');
     $("#about").attr('onclick', 'about();');
     $("#contact").attr('onclick', 'contact();');
+    curr_car = null;
 }
 
 
