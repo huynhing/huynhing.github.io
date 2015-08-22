@@ -230,21 +230,21 @@ var curr_car = null;
 function carproj() {
     if(curr_car != null) {
         $('html,body').animate({scrollTop: $(".nav").offset().top}, 500);
-        $('#specificproj').fadeOut(500, function() {
+        $('#specificproj').fadeOut(300, function() {
             curr_car = null;
             $('#specificproj').empty();
             $('#specificproj').remove();
-            $('#intro').fadeIn(500);
+            $('#intro').fadeIn(400);
         });
     } else {
         $('#content').append("<div id='specificproj'></div>");
          $.get('../projects/cars/sivi', function(response) {
             curr_car = response;
-            $('#intro').fadeOut(500, function () {
+            $('#intro').fadeOut(300, function () {
                 var wrap = "<div id='projcontent'>"
                 var head = "<h2 id='projcat'>My Garage</h2>"
                 $('#specificproj').fadeIn('fast', function() {
-                    $(head + wrap + response + div_end).hide().appendTo('#specificproj').fadeIn(500);
+                    $(head + wrap + response + div_end).hide().appendTo('#specificproj').fadeIn(400);
                     $('html,body').animate({scrollTop: $("#carproj").offset().top}, 500);
                 });
             });
@@ -257,10 +257,10 @@ function nextcar(link) {
             curr_car = link;
             $('#car').fadeOut('slow', function() {
                 $(this).remove();
-                $('#projcontent').hide().append(response).fadeIn('slow');
+                $('#projcontent').hide().append(response).fadeIn(400);
             });
         });
-        $('#specificproj').fadeIn('slow');
+        $('#specificproj').fadeIn(400);
 }
 
 function to_garage() {
