@@ -229,8 +229,8 @@ function rand_fact() {
 var curr_car = null;
 function carproj() {
     if(curr_car != null) {
-        $('html,body').animate({scrollTop: $(".nav").offset().top}, 500);
-        $('#specificproj').fadeOut(300, function() {
+        $('html,body').animate({scrollTop: $(".nav").offset().top}, 'fast');
+        $('#specificproj').fadeOut('fast', function() {
             curr_car = null;
             $('#specificproj').empty();
             $('#specificproj').remove();
@@ -240,12 +240,12 @@ function carproj() {
         $('#content').append("<div id='specificproj'></div>");
          $.get('../projects/cars/sivi', function(response) {
             curr_car = response;
-            $('#intro').fadeOut(300, function () {
+            $('#intro').fadeOut('fast', function () {
                 var wrap = "<div id='projcontent'>"
                 var head = "<h2 id='projcat'>My Garage</h2>"
                 $('#specificproj').fadeIn('fast', function() {
-                    $(head + wrap + response + div_end).hide().appendTo('#specificproj').fadeIn(400);
-                    $('html,body').animate({scrollTop: $("#carproj").offset().top}, 500);
+                    $(head + wrap + response + div_end).hide().appendTo('#specificproj').fadeIn('fast');
+                    $('html,body').animate({scrollTop: $("#carproj").offset().top}, 'fast');
                 });
             });
         });
