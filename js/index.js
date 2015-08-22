@@ -229,7 +229,7 @@ function rand_fact() {
 var curr_car = null;
 function carproj() {
     if(curr_car != null) {
-        $('html,body').animate({scrollTop: $(".nav").offset().top}, 'slow');
+        $('html,body').animate({scrollTop: $(".nav").offset().top}, 500);
         $('#specificproj').fadeOut(300, function() {
             curr_car = null;
             $('#specificproj').empty();
@@ -257,10 +257,10 @@ function nextcar(link) {
             curr_car = link;
             $('#car').fadeOut('fast', function() {
                 $(this).remove();
-                $('#projcontent').hide().append(response).fadeIn(400);
+                $('#projcontent').hide().append(response).fadeIn('fast');
             });
         });
-        $('#specificproj').fadeIn(400);
+        $('#specificproj').fadeIn('fast');
 }
 
 function to_garage() {
