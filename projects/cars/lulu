@@ -1,6 +1,6 @@
 <div id='car'>
 	<h3>
-	<a onclick=nextcar('../projects/cars/sivi');>prev</a>Honda Prelude Si - Lulu<a onclick=nextcar('../projects/cars/cammy');>next</a>
+	<a onclick=nextcar('../projects/cars/cammy');>prev</a>Honda Prelude Si - Lulu<a onclick=nextcar('../projects/cars/sivi');>next</a>
 	</h3>
 	<p>Sold :(</p>
 	<img src='../img/projects/car/lulu/1.jpg' style='width: 40%'>

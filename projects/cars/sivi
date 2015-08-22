@@ -1,6 +1,6 @@
 <div id='car'>
 	<h3>
-	<a onclick=nextcar('../projects/cars/cammy');>prev</a>Honda Civic Si - Sivi<a onclick=nextcar('../projects/cars/lulu');>next</a>
+	<a onclick=nextcar('../projects/cars/lulu');>prev</a>Honda Civic Si - Sivi<a onclick=nextcar('../projects/cars/cammy');>next</a>
 	</h3>
 	<p>Daily Driver</p>	
 	<img src='../img/projects/car/sivi/2.jpg' style='width: 40%'>
