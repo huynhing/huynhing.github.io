@@ -255,7 +255,7 @@ function carproj() {
 function nextcar(link) {
         $.get(link, function(response) {
             curr_car = link;
-            $('#car').fadeOut('slow', function() {
+            $('#car').fadeOut('fast', function() {
                 $(this).remove();
                 $('#projcontent').hide().append(response).fadeIn(400);
             });
