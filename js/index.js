@@ -245,7 +245,7 @@ function carproj() {
                 var head = "<h2 id='projcat'>My Garage</h2>"
                 $('#specificproj').fadeIn('fast', function() {
                     $(head + wrap + response + div_end).hide().appendTo('#specificproj').fadeIn('fast');
-                    $('html,body').animate({scrollTop: $("#carproj").offset().top}, 'fast');
+//                    $('html,body').animate({scrollTop: $("#carproj").offset().top}, 'fast');
                 });
             });
         });
