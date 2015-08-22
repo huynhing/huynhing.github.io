@@ -173,9 +173,9 @@ function expand(hobbylink) {
                 $('#clickable').fadeIn(300);
             });
         } else if(current_hobby != hobby) {
-            $('#hobby-content').fadeOut(400, function() {
+            $('#hobby-content').fadeOut('fast', function() {
                 $('#hobby-content2').replaceWith(cw2 + hobby + div_end);
-                $('#hobby-content').fadeIn(400);
+                $('#hobby-content').fadeIn('fast');
                 current_hobby = hobby;
                 $('html,body').animate({scrollTop: $("#fact").offset().top}, 'slow');
             });
@@ -243,7 +243,7 @@ function carproj() {
                     var wrap = "<div id='projcontent'>"
                     var head = "<h2 id='projcat'>My Garage</h2>"
                     $('#specificproj').fadeIn('fast', function() {
-                        $(head + wrap + response + div_end).hide().appendTo('#specificproj').fadeIn('slow');
+                        $(head + wrap + response + div_end).hide().appendTo('#specificproj').fadeIn('fast');
                     });
                 });
              });  
@@ -256,7 +256,7 @@ function carproj() {
                 var wrap = "<div id='projcontent'>"
                 var head = "<h2 id='projcat'>My Garage</h2>"
                 $('#specificproj').fadeIn('fast', function() {
-                    $(head + wrap + response + div_end).hide().appendTo('#specificproj').fadeIn('slow');
+                    $(head + wrap + response + div_end).hide().appendTo('#specificproj').fadeIn('fast');
                 });
             });
          });  
@@ -290,9 +290,9 @@ function carproj() {
 function nextcar(link) {
         $.get(link, function(response) {
             curr_car = link;
-            $('#car').fadeOut(300, function() {
+            $('#car').fadeOut('fast', function() {
                 $(this).remove();
-                $('#projcontent').hide().append(response).fadeIn('slow');
+                $('#projcontent').hide().append(response).fadeIn('fast');
             });
         });
         $('#specificproj').fadeIn('fast');
@@ -317,7 +317,7 @@ function codeproj() {
                     var wrap = "<div id='projcontent'>"
                     var head = "<h2 id='projcat'>My Coding Projects</h2>"
                     $('#specificproj').fadeIn('fast', function() {
-                        $(head + wrap + response + div_end).hide().appendTo('#specificproj').fadeIn('slow');
+                        $(head + wrap + response + div_end).hide().appendTo('#specificproj').fadeIn('fast');
                     });
                 });
              });  
@@ -330,7 +330,7 @@ function codeproj() {
                 var wrap = "<div id='projcontent'>"
                 var head = "<h2 id='projcat'>My Coding Projects</h2>"
                 $('#specificproj').fadeIn('fast', function() {
-                    $(head + wrap + response + div_end).hide().appendTo('#specificproj').fadeIn('slow');
+                    $(head + wrap + response + div_end).hide().appendTo('#specificproj').fadeIn('fast');
                 });
             });
          });  
