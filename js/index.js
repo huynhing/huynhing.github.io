@@ -159,22 +159,22 @@ function expand(hobbylink) {
         hobby = response;
         if(current_hobby == null) {
             $('#clickable').fadeOut(300, function() {
-                $(div_begin + cw + cw2 + hobby + div_end + div_end + div_end).hide().appendTo('#content').fadeIn(400);
+                $(div_begin + cw + cw2 + hobby + div_end + div_end + div_end).hide().appendTo('#content').fadeIn(300);
                 $('html,body').animate({scrollTop: $("#fact").offset().top}, 'slow');
                 current_hobby = hobby;
             });
         } else if(current_hobby == hobby) {
             $('html,body').animate({scrollTop: $(".all").offset().top}, 'slow');
-            $('#divider').fadeOut(500, function() {
+            $('#divider').fadeOut(400, function() {
                 $(this).empty();
                 $(this).remove();
                 current_hobby = null;
-                $('#clickable').fadeIn(400);
+                $('#clickable').fadeIn(300);
             });
         } else if(current_hobby != hobby) {
-            $('#hobby-content').fadeOut(400, function() {
+            $('#hobby-content').fadeOut(300, function() {
                 $('#hobby-content2').replaceWith(cw2 + hobby + div_end);
-                $('#hobby-content').fadeIn(400);
+                $('#hobby-content').fadeIn(300);
                 current_hobby = hobby;
                 $('html,body').animate({scrollTop: $("#fact").offset().top}, 'slow');
             });
