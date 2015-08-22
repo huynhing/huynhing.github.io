@@ -111,20 +111,21 @@ String.prototype.hashCode = function() {
   return hash;
 };
 
-var tries = 0;
+//var tries = 0;
 //Basic resume password protection
 function resume() {
-    var pass = prompt("Please enter the password", "Enter password here");
-    //You're trying to see what the password is. Smart.
-    if (!pass) {
-        alert('You did not enter a password.');
-    }
-    else if (pass.hashCode() == -426800532 || tries == 3) {
-        window.open("../files/resume.pdf", '_blank');   
-    } else {
-        tries++;
-        alert("You have entered the password incorrectly " + tries + " times. Please try again or email me for the password. If you keep on trying you might be able to get in.....");   
-    }
+    window.open("../files/resume.pdf", '_blank');   
+//    var pass = prompt("Please enter the password", "Enter password here");
+//    //You're trying to see what the password is. Smart.
+//    if (!pass) {
+//        alert('You did not enter a password.');
+//    }
+//    else if (pass.hashCode() == -426800532 || tries == 3) {
+//        window.open("../files/resume.pdf", '_blank');   
+//    } else {
+//        tries++;
+//        alert("You have entered the password incorrectly " + tries + " times. Please try again or email me for the password. If you keep on trying you might be able to get in.....");   
+//    }
 }
 
 function contact() {
