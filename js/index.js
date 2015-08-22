@@ -9,15 +9,14 @@ function preload(callback) {
 	var arrayofimages = [];
 	$.get('../listofimg', function(response) {
     	arrayofimages = response.split("\n");
+        for(i=0; i < arrayofimages.length; i++) {
+            images[i+1] = new Image();
+            images[i+1].src = arrayofimages[i];
+        }
+        if (callback && typeof(callback) === "function") {
+            callback();
+        }
 	});
-    for(i=0; i < arrayofimages.length; i++) {
-        images[i+1] = new Image();
-        images[i+1].src = arrayofimages[i];
-        alert('test');
-    }
-    if (callback && typeof(callback) === "function") {
-        callback();
-    }
 }
 
 function init() {
