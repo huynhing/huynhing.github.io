@@ -6,30 +6,14 @@ function preload_spinner() {
 }
 
 function preload(callback) {
-    var arrayofimages = ["../img/under-construction.gif",
-    		"../img/about/piano/pianoplaying.jpg", 
-            "../img/about/car/car2.jpg", 
-            "../img/about/basketball/lakers.png", 
-            "../img/me.jpg", 
-            "../img/about/emojis/phone.png", 
-            "../img/about/emojis/computer.png", 
-            "../img/about/emojis/pho.png", 
-            "../img/about/emojis/basketball.png", 
-            "../img/about/emojis/sushi.png", 
-            "../img/about/emojis/burger.png", 
-            "../img/about/emojis/money.png",
-            "../img/about/emojis/finance.png",
-            "../img/about/emojis/pizza.png", 
-            "../img/about/emojis/car.png", 
-            "../img/about/emojis/tool.png", 
-            "../img/about/emojis/jdm.png", 
-            "../img/about/emojis/piano.png",
-            "../img/projects/car/lulu/1.jpg",
-            "../img/projects/car/sivi/1.jpg",
-            "../img/projects/car/sivi/2.jpg"];
+	var arrayofimages = [];
+	$.get('../listofimg', function(response) {
+    	arrayofimages = response.split("\n");
+	});
     for(i=0; i < arrayofimages.length; i++) {
         images[i+1] = new Image();
         images[i+1].src = arrayofimages[i];
+        alert('test');
     }
     if (callback && typeof(callback) === "function") {
         callback();
