@@ -2,6 +2,7 @@
 	<h3>
 	<a onclick=nextcar('../projects/cars/sivi');>prev</a>Honda Prelude Si - Lulu<a onclick=nextcar('../projects/cars/cammy');>next</a>
 	</h3>
+	<p>Sold :(</p>
 	<img src='../img/projects/car/lulu/1.jpg' style='width: 40%'>
 	<p>Enter the Honda Prelude. I've always wanted to drive stick, but my family didn't have a car that was manual. One day, my dad bought this (ridiculously) low-priced stick shift Prelude to teach me. Immediately upon bringing it home I loved it.</p>
 	</br>
