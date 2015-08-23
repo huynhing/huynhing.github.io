@@ -133,6 +133,18 @@ footer {
     margin-right: 300px;
 }
 
+#begin {
+    padding-left: 30px;   
+}
+
+#end {
+    padding-right: 70px;   
+}
+
+#last {
+    padding-bottom: 10px;   
+}
+
 
 
 

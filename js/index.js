@@ -346,3 +346,21 @@ function codeproj() {
         });
     } 
 }
+
+var content = null;
+function showmods(link) {
+    $.get(link, function(response) {
+       $('#inner-cont').fadeOut(300, function() {
+           content = $('#inner-cont').children();
+           $(this).empty();
+           $(this).append(response).fadeIn(300);
+       });
+    });
+}
+
+function showstory() {
+    $('#inner-cont').fadeOut(300, function() {
+        $(this).empty();
+        $(this).hide().append(content).fadeIn(300);
+    });
+}
