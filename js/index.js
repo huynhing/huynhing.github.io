@@ -216,7 +216,7 @@ function rand_fact() {
     if (facts.length === 0) {
         $('#randfact').fadeOut('fast', function() {
             $(this).remove();
-            $('#fact').append("<p>You've gone through all of them!</p>");
+            $('#fact').append("<p>Congratulations you've gone through all of them!</p>");
         });
     } else {
         var num = Math.floor((Math.random() * facts.length));
