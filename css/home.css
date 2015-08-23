@@ -56,6 +56,11 @@ body {
     border-right: 2px solid;
 }
 
+#content {
+    margin-right: 240px;
+    margin-left: 240px;
+}
+
 .mess {
 /*
 	border: 3px solid;
