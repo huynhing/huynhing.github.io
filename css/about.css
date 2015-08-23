@@ -75,6 +75,7 @@ body {
     font-weight: normal;
 }
  
+/*
 #meee:hover {
   -webkit-transition: all 0.5s ease;
      -moz-transition: all 0.5s ease;
@@ -87,6 +88,7 @@ body {
       -ms-transform: rotate(360deg);
           transform: rotate(360deg);
 }
+*/
 
 #meee {
     border-radius: 50%;
