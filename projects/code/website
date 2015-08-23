@@ -1,6 +1,6 @@
 <div id='code'>
 	<h3>
-	<a onclick=nextcode('../projects/code/mygm');>prev</a>This Website!<a onclick=nextcode('../projects/code/smartkitchen');>next</a>
+	<a onclick=nextcode('../projects/code/mygm');>prev</a>$(this)<a onclick=nextcode('../projects/code/smartkitchen');>next</a>
 	</h3>
 	<p>Finished! (mostly)</p>
 	<img src='../img/projects/code/website/preview.png' style='width: 70%'>
