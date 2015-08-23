@@ -3,7 +3,7 @@
 	<a onclick=nextcar('../projects/cars/lulu');>prev</a>Honda Civic Si - Sivi
 	</h3>
 	<p>Daily Driver</p>	
-	<img src='../img/projects/car/sivi/2.jpg' style='width: 40%'>
+	<img src='../img/projects/car/sivi/2.jpg' style='width: 70%'>
 	<div id='inner-cont'>
 	<p>After a successful first year of college, my parents decided it was time to move on from the Prelude, because...well...it was unsafe...</p>
 	</br>
