@@ -292,10 +292,10 @@ function nextcar(link) {
             curr_car = link;
             $('#car').fadeOut('fast', function() {
                 $(this).remove();
-                $('#projcontent').hide().append(response).fadeIn('fast');
+                $('#projcontent').hide().append(response).fadeIn('slow');
             });
         });
-        $('#specificproj').fadeIn('fast');
+        $('#specificproj').fadeIn('slow');
 }
 
 function to_garage() {
