@@ -177,7 +177,7 @@ function expand(hobbylink) {
                 $('#hobby-content2').replaceWith(cw2 + hobby + div_end);
                 $('#hobby-content').fadeIn('fast');
                 current_hobby = hobby;
-                $('html,body').animate({scrollTop: $("#fact").offset().top}, 'slow');
+//                $('html,body').animate({scrollTop: $("#fact").offset().top}, 'slow');
             });
         }
     });
