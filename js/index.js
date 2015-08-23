@@ -291,14 +291,14 @@ function carproj() {
 }
 
 function nextcar(link) {
-        $.get(link, function(response) {
-            curr_car = link;
-            $('#car').fadeOut('fast', function() {
-                $(this).remove();
-                $('#projcontent').hide().append(response).fadeIn('slow');
-            });
+    $.get(link, function(response) {
+        curr_car = link;
+        $('#car').fadeOut('fast', function() {
+            $(this).remove();
+            $('#projcontent').hide().append(response).fadeIn('slow');
         });
-        $('#specificproj').fadeIn('slow');
+    });
+    $('#specificproj').fadeIn('slow');
 }
 
 function to_garage() {
@@ -367,3 +367,20 @@ function showstory() {
         $(this).hide().append(content).fadeIn(300);
     });
 }
+
+function nextcode(link) {
+    $.get(link, function(response) {
+        curr_code = link;
+        $('#code').fadeOut('fast', function() {
+            $(this).remove();
+            $('#projcontent').hide().append(response).fadeIn('slow');
+        });
+    });
+    $('#specificproj').fadeIn('slow');
+}
+
+
+
+
+
+
