@@ -19,7 +19,7 @@ function preload(callback) {
 	});
 }
 
-function init() {
+function init(callback) {
     $('.all').fadeOut(150, function() {
         $('#css_profile').attr('href', 'css/home.css');
         $(".mess h1").text('Welcome to my personal website!');
@@ -30,7 +30,10 @@ function init() {
     $("#home").removeAttr('onclick');
     $("#about").attr('onclick', 'about();');
     $("#projects").attr('onclick', 'projects();');
-    $("#contact").attr('onclick', 'contact();');   
+    $("#contact").attr('onclick', 'contact();'); 
+    if (callback && typeof(callback) === "function") {
+        callback();
+    }
 }
 
 function about() {  

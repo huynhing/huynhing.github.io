@@ -68,8 +68,8 @@
 <script type="text/javascript">
     preload(function() {
         $('#spinner').delay(1000).fadeOut("slow", function() {
-            $('#loading').delay(500).fadeOut("slow");
-            init();
+//            $('#loading').delay(500).fadeOut("slow");
+            init($('#loading').delay(500).fadeOut("slow"));
         });
     });
 </script>
