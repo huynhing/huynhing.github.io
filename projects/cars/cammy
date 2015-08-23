@@ -7,7 +7,7 @@
 	<div id='inner-cont'>
 	<p>This was my dad's car for 12 years before he passed it onto me and made it my car. I grew up in that car and now it was mine.</p>
 	</br>
-	<p>It was a fast car and quite roomy, because it was a family sedan with a V6 that put out 192 horsepower and 209ft-lb of torque. Needless to say it was honestly the best car any teenager could ask, because it was safe, reliable, and had enough room for transporting friends, siblings, and groceries.</p>
+	<p>It was a fast car and quite roomy, because it was a family sedan with a V6. Needless to say it was honestly the best car any teenager could ask, because it was safe, reliable, and had enough room for transporting friends, siblings, and groceries.</p>
 	</br>
 	<p id='last'>Unfortunately, being the crazy teen I was, I wanted to drive stick shift and the Camry was an automatic.......</p>
 	<a id='mods' onclick=showmods('../projects/cars/cammy_mods');>Mods</a>
