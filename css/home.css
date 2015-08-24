@@ -8,12 +8,14 @@ body {
     text-align: center;
 }
 
+/*
 #name {
     float: right;
     text-transform: uppercase;
     color: white;
     padding-right: 40px;
 }
+*/
 
 .nav {
 	text-align: left;
