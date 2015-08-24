@@ -1,11 +1,23 @@
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 1080px) {
     #name {
         display: none;   
+    }
+
+    .fademe {
+        width: auto;
+        float: none;
     }
     
     .all {
         width: auto;
-        float: none;
+    }
+    
+    #content {
+        width: auto;   
+    }
+    
+    footer {
+        display: none;   
     }
 }
 
