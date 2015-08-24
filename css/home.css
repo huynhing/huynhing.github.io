@@ -1,27 +1,3 @@
-@media screen and (max-width: 1080px) {
-    #name {
-        display: none;   
-    }
-
-    .fademe {
-        width: auto;
-        float: none;
-    }
-    
-    .all {
-        width: auto;
-    }
-    
-    #content {
-        width: auto;   
-    }
-    
-    footer {
-        display: none;   
-    }
-}
-
-
 body {
      background-color: #F8F8FF;  
 }
