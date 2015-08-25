@@ -1,0 +1,66 @@
+MyGeneralManager
+
+Person interface:
+	Methods:
+
+Classes:
+	GM
+		Handles the commands
+	StatsReader
+		Handles the bulk of the data scraping
+	Player
+		Player object that will store stats
+	Coach
+		Coach object that will store stats and link to teams and players
+	GM
+		General Manager object that will store info and link to teams and players
+	User
+		User object that is unique to each user
+	Team
+		Team object that will store Player objects and stats
+
+GM Class
+	Data Structures:
+		HashMap<String, User> - for retrieving User object quickly based on user name
+		HashMap<String, Player> - for retrieving stats on a player
+		HashMap<String, Team> - for retrieving stats on a team (Franchise)
+	List of commands:
+		init() - initializes and serializes an instance of the General Manager
+		create(String[] new_user) - takes in an array of information and creates a new user
+			index 0 = name
+			index 1 = favorite team - entered as 3 digit code and 4 digit year, ex) "LAL 2001"
+			index 2 = favorite player - entered as full name? ex) "Kobe Bryant"
+			prints message upon successful creation
+		add(String type, String name, String user) - adds a specific statistic to a user's list of stats
+			type = String of type of object, player or team, ex) team, Team, player, Player
+			name = Name of the player (full name) or team (3 digit code/4 digit year), ex) Kobe Bryant or LAL 2001
+			user = String of the user
+			ERRORS
+				Check if type, name, and user exists
+			PRINT
+				Successful --> print out stats
+				Fail --> inform reason
+		get - multiple get methods based on number of arguments supplied
+			get(String type, String name) - get all information on name
+				checks if data exists in data structure
+				if it doesnt, scrape and add it
+			get(String type, String name, String stat) - get a specific stat from name
+				checks if stat exists, retrieves it from data structure if it exists
+				if it doesnt, scrape and add it
+		custom(String team_name, String user) - creates custom team and add it to user
+
+		update() - updates all stats that need updating (game stats and such)
+
+Player Class
+
+Team Class - two types, Franchise and Yearly
+	Data Structures:
+		(Both) TreeMap<int, Player> - for retrieving all players based on a stat (PPG, MPG, PER, etc)
+		(Both) ArrayList<Player> - for iterating through all players
+		(Franchise) HashMap<int, Team> - for storing and retrieving all instances of this team by YEAR
+		(Franchise) HashMap<String, Coach> - for storing and retrieving Coach objects
+		(Franchise) HashMap<String, GM> - for storing and retrieving GM objects
+		(Franchise) ArrayList<Person> - for storing ALL people associated with this team
+		TreeMap<int, Team> - for storing and retrieving all championship teams
+		
+
