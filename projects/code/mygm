@@ -2,7 +2,7 @@
 	<h3 id='begin'>
 	MyGM/StatsScraper (Basketball)<a onclick=nextcode('../projects/code/website');>next</a>
 	</h3>
-	<p>In Development</p>
+	<p>In Development (20%)</p>
 	<img src='../img/projects/code/mygm/MyGMpreview.jpg' style='width: 100%'>
 	<p>My General Manager (MyGM for short) is a JAVA command line program that scrapes basketball statistics (using the jsoup Java library) from "basketball-reference.com" and stores them in data structures for user manipulation and retrieval.</p>
 	</br>

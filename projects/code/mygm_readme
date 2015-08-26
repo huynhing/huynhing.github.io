@@ -52,6 +52,8 @@ GM Class
 		update() - updates all stats that need updating (game stats and such)
 
 Player Class
+	HashMap<String, HashMap<String, String> - for storing statistics for the Player
+		year as the first key, statistic type as the second key, statistic value as the returned
 
 Team Class - two types, Franchise and Yearly
 	Data Structures:
