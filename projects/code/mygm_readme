@@ -1,8 +1,5 @@
 MyGeneralManager
 
-Person interface:
-	Methods:
-
 Classes:
 	GM
 		Handles the commands
@@ -18,13 +15,25 @@ Classes:
 		User object that is unique to each user
 	Team
 		Team object that will store Player objects and stats
+	Game
+		Game object that will represent games played by players
+	Stats
+		Stats object that will store all of a player's stats
 
 GM Class
-	Data Structures:
-		HashMap<String, User> - for retrieving User object quickly based on user name
-		HashMap<String, Player> - for retrieving stats on a player
-		HashMap<String, Team> - for retrieving stats on a team (Franchise)
-	List of commands:
+	Instance Variables:
+		HashMap<String, User> allUsers
+			for retrieving User object quickly based on user name
+		HashMap<String, Player> allPlayers
+			for retrieving stats on a player
+		HashMap<String, Team> allTeams
+			for retrieving stats on a team (Franchise)
+		HashMap<String, String> fullStats
+			for retrieving stats full name based on abbreviation
+		HashMap<String, String> shortStats
+			for retrieving stats abbreviation based on full name
+
+	List of methods:
 		init() - initializes and serializes an instance of the General Manager
 		create(String[] new_user) - takes in an array of information and creates a new user
 			index 0 = name
@@ -52,17 +61,81 @@ GM Class
 		update() - updates all stats that need updating (game stats and such)
 
 Player Class
-	HashMap<String, HashMap<String, String> - for storing statistics for the Player
-		year as the first key, statistic type as the second key, statistic value as the returned
+
+	Instance Variables:
+		String myName
+		String myHighSchool
+		String myCollege
+		String myBirth_Date
+		String drafted
+		int myPro_exp
+		int myWeight
+		Height myHeight
+		Game myDebut
+		Stats myStats
+		ArrayList<String> myPositions
+		HashMap<String, ArrayList<Team>> myJerseyNumbers
+		HashMap<String, Team> myTeams
+		HashMap<String, Coach> myCoaches
+		TreeMap<Date, Game> myGames
+		Stack<Game> myRecentGames
+
+	List of methods:
+		addStats(String[][] all_stats) - takes in an array of stats and adds it to the myStats HashMap
+			"season", "age", "tm", "lg", "pos", 
+			"g", "gs", "mp", "fg", "fga", "fg%",
+			"3p", "3pa", "3p%", "2p", "2pa", 
+			"2p%", "efg%", "ft", "fta", "ft%", 
+			"orb", "drb", "trb", "ast", "stl", 
+			"blk", "tov", "pf", "pts"
+
 
 Team Class - two types, Franchise and Yearly
-	Data Structures:
-		(Both) TreeMap<int, Player> - for retrieving all players based on a stat (PPG, MPG, PER, etc)
-		(Both) ArrayList<Player> - for iterating through all players
-		(Franchise) HashMap<int, Team> - for storing and retrieving all instances of this team by YEAR
-		(Franchise) HashMap<String, Coach> - for storing and retrieving Coach objects
-		(Franchise) HashMap<String, GM> - for storing and retrieving GM objects
-		(Franchise) ArrayList<Person> - for storing ALL people associated with this team
-		TreeMap<int, Team> - for storing and retrieving all championship teams
+	Instance Variables:
+		(Yearly) Team myFranchise
+		(Both) String myLocation
+		(Franchise) HashMap<String, Team (franchise?)> myNames
+		(Both) String myRecord
+		(Both) double myRecordPerc
+		(Franchise) int myPlayoffApp
+		(Franchise) int myChamps
+		(Yearly) Stats myStats
+
+		(Both) TreeMap<int, Player> allPlayersStats
+			for retrieving all players based on a stat (PPG, MPG, PER, etc)
+		(Both) HashMap<String, Player> allPlayers
+			for iterating through all players
+		(Franchise) HashMap<String, Team> allYearly
+			for storing and retrieving all instances of this team by YEAR
+		(Franchise) HashMap<String, Coach> allCoaches
+			for storing and retrieving Coach objects
+		(Franchise) HashMap<String, GM> allGMs
+			for storing and retrieving GM objects
+		TreeMap<String, Team> allChamps
+			for storing and retrieving all championship teams
+
+Stats Class (3 types: Player, Coach, Team)
+	Instance Variables:
+		PLAYERS
+		HashMap<String, HashMap<String, String>> myTotalStats
+		HashMap<String, HashMap<String, String>> myPGStats
+		HashMap<String, HashMap<String, String>> myP36MinStats
+		HashMap<String, HashMap<String, String>> myP100PosStats
+		HashMap<String, HashMap<String, String>> myAdvancedStats
+		HashMap<String, HashMap<String, String>> myShootingStats
+		HashMap<String, HashMap<String, String>> myPlayoffsStats
+		HashMap<String, HashMap<String, String>> myPlayoffsPGStats
+		HashMap<String, HashMap<String, String>> myPlayoffsP36MinStats
+		HashMap<String, HashMap<String, String>> myPlayoffsP100PosStats
+		HashMap<String, HashMap<String, String>> myPlayoffsAdvancedStats
+		HashMap<String, HashMap<String, String>> myPlayoffsShootingStats
+
+		for storing statistics for the Player
+			year as the first key, statistic type as the second key, statistic value as the returned
+
+		COACHES
+		TEAMS
+
+		#ADD SUPPORT FOR OTHER STATS
 		
 
