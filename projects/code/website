@@ -8,7 +8,7 @@
 	</br>
 	<p>Right now my site heavily relies on JavaScript being enabled, because most of the fancy effects and tab changes use it. There are some redundant functions that I wrote that I will be combining with other functions (basic code cleaning).</p>
 	</br>
-	<p>Although it looks complete, I will be updating my website with more content in the future and improving the overall look and feel of it (maybe developing the backend). I plan on adding a music player, rather than utilizing Spotify, and eventually embedding one of my projects (MyGM) for public use. I also plan on building a JAVA command line tool that will allow me to easily update content on my page (to do this I need further organize my website).</p>
+	<p>Although it looks complete, I will be updating my website with more content in the future and improving the overall look and feel of it (maybe developing the backend). I plan on adding a music player, rather than utilizing Spotify, and eventually embedding one of my projects (MyGM) for public use. I also plan on building a JAVA command line tool that will allow me to easily update the content on my site (to do this I need to further organize my website).</p>
 	</br>
 	<p id='last'>I currently have 2 domain names that point to my site: erichuynhing.com and allidoishuynh.com. I thought it'd be funny to have the second domain name (credits to John Ingrao for coming up with the name).</p.
 </div>
