@@ -163,6 +163,10 @@ footer {
     line-height: 125%;
 }
 
+#tldr {
+    font-style: italic;   
+}
+
 #image {
     padding-top: 10px;
 }

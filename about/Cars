@@ -1,6 +1,7 @@
 <h1>Fast and Furious</h1>
 <img id='image' src='../img/about/car/car2.jpg' style='width: 70%'>
-<p>I absolutely love driving! There's something about it that makes me feel relaxed.</p>
+<p id='tldr'>tl;dr: I'm obsessed with cars.</p>
+<p>I love driving. There's something about it that makes me feel relaxed.</p>
 <p>I am an avid car enthusiast and enjoy working on my car (when I have money for parts and time to install them).</p>
-<p>One day I eventually want to own a R34 Nissan GTR or a MKIV Toyota Supra (or both!!). I am currently driving a Honda Civic Si and am working on making it track ready. To see what I have done to my current car and my past cars, click on the following link.</p>
+<p>One day I eventually want to own a R34 Nissan GTR or a MKIV Toyota Supra (why not both?). I am currently driving a Honda Civic Si and am working on making it track ready. To see what I have done to my current car and my past cars, click on the following link.</p>
 <a onclick='to_garage();'>To my garage!</a>
