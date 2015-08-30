@@ -30,7 +30,8 @@ function init(callback) {
     $("#home").removeAttr('onclick');
     $("#about").attr('onclick', 'about();');
     $("#projects").attr('onclick', 'projects();');
-    $("#contact").attr('onclick', 'contact();'); 
+    $("#contact").attr('onclick', 'contact();');
+    $('#title').text("Home | Eric Huynh");
     if (callback && typeof(callback) === "function") {
         callback();
     }
@@ -50,6 +51,7 @@ function about() {
             });
         });
     });
+    $('#title').text("About Me | Eric Huynh");
     $("#about").removeAttr('onclick');
     $("#home").attr('onclick', 'home();');
     $("#projects").attr('onclick', 'projects();');
@@ -72,6 +74,7 @@ function home() {
             });
         });
     });
+    $('#title').text("Home | Eric Huynh");
     $("#home").removeAttr('onclick');
     $("#about").attr('onclick', 'about();');
     $("#projects").attr('onclick', 'projects();');
@@ -95,6 +98,7 @@ function projects(callback) {
             });
         });
     });
+    $('#title').text("Projects | Eric Huynh");
     $("#projects").removeAttr('onclick');
     $("#home").attr('onclick', 'home();');
     $("#about").attr('onclick', 'about();');
@@ -146,6 +150,7 @@ function contact() {
             });
         });
     });
+    $('#title').text("Contact | Eric Huynh");
     $("#contact").removeAttr('onclick');
     $("#home").attr('onclick', 'home();');
     $("#about").attr('onclick', 'about();');
