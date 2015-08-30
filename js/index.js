@@ -6,6 +6,7 @@ function preload_spinner() {
 }
 
 function preload(callback) {
+    $('#title').text('Preloading...');
 	var arrayofimages = [];
 	$.get('../listofimg', function(response) {
     	arrayofimages = response.split("\n");
