@@ -3,7 +3,7 @@
 	MyGM/StatsScraper (Basketball)<a onclick=nextcode('../projects/code/website');>next</a>
 	</h3>
 	<p>In Development</p>
-	<img src='../img/projects/code/mygm/MyGMpreview.jpg' style='width: 100%'>
+	<img src='../img/projects/code/mygm/MyGMpreview2.png’ style='width: 100%'>
 	<p>My General Manager (MyGM for short) is a JAVA command line program that scrapes basketball statistics (using the jsoup Java library) from "basketball-reference.com" and stores them in data structures for user manipulation and retrieval.</p>
 	</br>
 	<p>MyGM will able to grab ANY basketball statistic and data such as PER, PPG, MPG, win shares, and player information. Users will be able to create custom teams and get the potential stats for that team.</p>
