@@ -1,9 +1,0 @@
-<div id='code'>
-	<h3 id='end'>
-	<a onclick=nextcode('../projects/code/website');>prev</a>Smart Kitchen
-	</h3>
-	<p>Planning Stage</p>
-	<p>This is an iPhone and Android application that I am currently planning (writing out the README and blueprint). The name can/probably will be changed when I actually start writing the application.</p>
-	</br>
-	<p>The idea of this app is to allow users to store their kitchen into their smart devices. On the basic level, it will allow users to check food quantity levels and expiration dates (with notifications). On a more advanced level, it will pull recipes from the internet based on what ingredients users have in their kitchen and suggest them.</p>
-</div>
