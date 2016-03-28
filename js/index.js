@@ -122,8 +122,8 @@ String.prototype.hashCode = function() {
 var tries = 0;
 //Basic resume password protection
 function resume() {
-    window.open("../files/resume.pdf", '_blank');   
-     var pass = prompt("Please enter the password");
+    //window.open("../files/resume.pdf", '_blank');   
+    var pass = prompt("Please enter the password");
     //You're trying to see what the password is. Smart.
     if (!pass) {
         alert('You did not enter a password.');
