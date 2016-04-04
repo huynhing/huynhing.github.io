@@ -32,6 +32,7 @@ function init(callback) {
     $("#about").attr('onclick', 'about();');
     $("#projects").attr('onclick', 'projects();');
     $("#contact").attr('onclick', 'contact();');
+    $("#sivi").attr('onclick', 'sivi();');
     $('#title').text("Home | Eric Huynh");
     if (callback && typeof(callback) === "function") {
         callback();
@@ -57,6 +58,7 @@ function about() {
     $("#home").attr('onclick', 'home();');
     $("#projects").attr('onclick', 'projects();');
     $("#contact").attr('onclick', 'contact();');
+    $("#sivi").attr('onclick', 'sivi();');
     current_hobby = null;
     
 }
@@ -80,6 +82,7 @@ function home() {
     $("#about").attr('onclick', 'about();');
     $("#projects").attr('onclick', 'projects();');
     $("#contact").attr('onclick', 'contact();');
+    $("#sivi").attr('onclick', 'sivi();');
 }
 
 function projects(callback) {
@@ -104,8 +107,31 @@ function projects(callback) {
     $("#home").attr('onclick', 'home();');
     $("#about").attr('onclick', 'about();');
     $("#contact").attr('onclick', 'contact();');
+    $("#sivi").attr('onclick', 'sivi();');
     curr_car = null;
     curr_code = null;
+}
+
+function sivi() {
+    $('.fademe').fadeOut(150, function() {
+        $("#content-wrapper").fadeOut(150, function() {
+            $("#content").remove();
+            $('#css_profile').attr('href', 'css/sivi.css');
+            $(".mess h1").fadeOut(150, function() {
+                $(".mess h1").fadeIn(150);
+                $(".mess h1").text('Project Sivi');
+                $("#content-wrapper").fadeIn(150).load("../sivi.html", function() {
+                    $('.fademe').fadeIn(150);   
+                });
+            });
+        });
+    });
+    $('#title').text("Project Sivi | Eric Huynh");
+    $("#sivi").removeAttr('onclick');
+    $("#about").attr('onclick', 'about();');
+    $("#home").attr('onclick', 'home();');
+    $("#projects").attr('onclick', 'projects();');
+    $("#contact").attr('onclick', 'contact();');
 }
 
 String.prototype.hashCode = function() {
@@ -122,18 +148,18 @@ String.prototype.hashCode = function() {
 var tries = 0;
 //Basic resume password protection
 function resume() {
-    //window.open("../files/resume.pdf", '_blank');   
-    var pass = prompt("Please enter the password");
+    window.open("../files/resume.pdf", '_blank');   
+//    var pass = prompt("Please enter the password");
     //You're trying to see what the password is. Smart.
-    if (!pass) {
-        alert('You did not enter a password.');
-    }
-    else if (pass.hashCode() == -426800532 || tries >= 3) {
-        window.open("../files/resume.pdf", '_blank');   
-    } else {
-        tries++;
-        alert("You have entered the password incorrectly " + tries + " times. Please try again or email me for the password. If you keep on trying you might be able to get in.....");   
-    } 
+//    if (!pass) {
+//        alert('You did not enter a password.');
+//    }
+//    else if (pass.hashCode() == -426800532 || tries >= 3) {
+//        window.open("../files/resume.pdf", '_blank');   
+//    } else {
+//        tries++;
+//        alert("You have entered the password incorrectly " + tries + " times. Please try again or email me for the password. If you keep on trying you might be able to get in.....");   
+//    } 
 }
 
 function contact() {
@@ -155,6 +181,7 @@ function contact() {
     $("#home").attr('onclick', 'home();');
     $("#about").attr('onclick', 'about();');
     $("#projects").attr('onclick', 'projects();');
+    $("#sivi").attr('onclick', 'sivi();');
 }
 
 var div_begin = "<div id='divider'>";
