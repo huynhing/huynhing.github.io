@@ -3,6 +3,7 @@ body {
     font-family: monospace;
     color: #f8f8f2;
     cursor: default;
+    font-size: 15px;
 }
 
 #blue_font {
