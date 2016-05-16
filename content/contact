@@ -1,0 +1,14 @@
+<span id="grey_font">"""</span><br>
+<span id="grey_font">contact me</span><br>
+<span id="grey_font">"""</span>
+
+<br>
+<span id="orange_font">self</span><a onclick="main_content();" id='back_click'>.go_back()</a><br><br>
+
+<span id="orange_font">self</span><span>.contact_me </span><span id="pink_font">= </span><br><span>{</span><br>
+    <span id="yellow_font">"primary"</span><span> : </span><a id="purple_font" href="mailto:ericehhuynh@gmail.com">ericehhuynh@gmail.com</a><br>
+    <span id="yellow_font">"secondary"</span><span> : </span><a id="purple_font" href="mailto:ericehhuynh@berkeley.edu">ericehhuynh@berkeley.edu</a><br>
+    <span id="yellow_font">"phone"</span><span> : </span><a id="purple_font" href="tel:714-310-8273">714-310-8273</a> <br>
+<span>}</span>
+
+<br>

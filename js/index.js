@@ -1,3 +1,15 @@
+function about() {
+    $("#main_content").load("../content/about_content", function() {});
+}
+
+function main_content() {
+    $("#main_content").load("../content/main_content", function(){});   
+}
+
+function contact() {
+    $("#main_content").load("../content/contact", function(){});       
+}
+
 //Credit --> Fisher-Yates Shuffle
 function shuffle(array) {
   var currentIndex = array.length, temporaryValue, randomIndex ;

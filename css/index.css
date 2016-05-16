@@ -36,7 +36,7 @@ body {
     color: #75715e;
 }
 
-#rand_click {
+#rand_click, #about_click, #back_click, #contact_click {
     color: #ae81ff;
     cursor: pointer;
 }
@@ -62,10 +62,70 @@ body {
 #me_image {
     padding-top: 10px;
     text-align: center;
+    position: relative;
 }
 
 #meee {
     border-radius: 50%;
-    width: 13%;
-    height: 13%;
+    width: 12%;
+    height: 12%;
+}
+
+
+
+/*Blinking cursor*/
+.blinking-cursor {
+  font-weight: 100;
+  font-size: 14px;
+  color: #2E3D48;
+  -webkit-animation: 1s blink step-end infinite;
+  -moz-animation: 1s blink step-end infinite;
+  -ms-animation: 1s blink step-end infinite;
+  -o-animation: 1s blink step-end infinite;
+  animation: 1s blink step-end infinite;
+}
+
+@keyframes "blink" {
+  from, to {
+    color: transparent;
+  }
+  50% {
+    color: white;
+  }
+}
+
+@-moz-keyframes blink {
+  from, to {
+    color: transparent;
+  }
+  50% {
+    color: white;
+  }
+}
+
+@-webkit-keyframes "blink" {
+  from, to {
+    color: transparent;
+  }
+  50% {
+    color: white;
+  }
+}
+
+@-ms-keyframes "blink" {
+  from, to {
+    color: transparent;
+  }
+  50% {
+    color: white;
+  }
+}
+
+@-o-keyframes "blink" {
+  from, to {
+    color: transparent;
+  }
+  50% {
+    color: white;
+  }
 }
