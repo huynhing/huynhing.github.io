@@ -28,7 +28,7 @@
     <span id="yellow_font">this_site</span>
 <span>]</span>
 
-<br>
+<br><span class="line"></span><br>
 
 <span class="line"></span><span id="orange_font">self</span><span>.technical_experience </span><span id="pink_font">= </span><br><span class="line">{</span><br>
     <span class="line" id="yellow_font">"pandora"</span><span> : (</span><span id="yellow_font">software engineer intern,</span><span> 06/16 - 08/16</span><span>)</span><br>
