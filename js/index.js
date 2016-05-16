@@ -3,11 +3,11 @@ function about() {
 }
 
 function main_content() {
-    $("#main_content").load("../content/main_content", function(){});   
+    $("#main_content").load("../content/main_content", function(){});
 }
 
 function contact() {
-    $("#main_content").load("../content/contact", function(){});       
+    $("#main_content").load("../content/contact", function(){});
 }
 
 //Credit --> Fisher-Yates Shuffle

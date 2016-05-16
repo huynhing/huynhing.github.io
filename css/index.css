@@ -46,26 +46,19 @@ body {
     color: #ae81ff;
 }
 
-/*
-#indented-once {
-    padding-left: 48px;
-}
-*/
-
 #about_inner {
-    position:absolute;
-    top:50%;
-    left:50%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
     width: 800px;
     height: 300px;
-    margin-top: -150px; /* this is half the height of your div*/  
-    margin-left:-325px; /*this is half of width of your div*/
+    margin-top: -150px;
+    margin-left: -325px;
 }
 
 #me_image {
-    padding-top: 10px;
+    padding-top: 20px;
     text-align: center;
-    position: relative;
 }
 
 #meee {
@@ -73,8 +66,6 @@ body {
     width: 12%;
     height: 12%;
 }
-
-
 
 /*Blinking cursor*/
 #blinking-cursor {
@@ -134,7 +125,7 @@ body {
 }
 
 
-
+/* Line numbering */
 .line {
     counter-increment: line;
 }
@@ -148,15 +139,3 @@ body {
     color: #888;
     width: 1em;
 }
-
-/*
-#about_container .line:before{
-    counter-increment: line;
-    content: counter(line);
-    display: inline-block;
-    border-right: 1px solid #ddd;
-    padding: 0 .5em;
-    margin-right: .5em;
-    color: #888
-}
-*/
