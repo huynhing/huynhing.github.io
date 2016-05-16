@@ -3,32 +3,80 @@
      
  <head>
 	<link id="css_profile" rel="stylesheet" href="css/index.css">
-	<title id='title'>eric_huynh</title>
-    <script src="js/jquery.js"></script>
-    <script src="js/index.js"></script>
+	<script src="js/jquery.js"></script>
+    <script id="jq" src="js/index.js"></script>
+    <script type="text/javascript">
+        preload_spinner(); 
+    </script>
+    <link rel="shortcut icon" type="image/png" href="/img/favicon.ico"/>
+	<title id='title'>Eric Huynh</title>
 </head>
 
 <body>
 
-<div id="me_image">
-    <img id="meee" src="img/me.jpg"> 
-</div>    
-    
+<div id="loading">
+    <div id="spinner"></div>
+</div>
 
-<div id="about_container">
-    <div id="about_inner">
-        
-        <span id="blue_font">class </span> <span id="green_font">eric_huynh</span><span>:</span><br>
-        
-        <div id="indented-once"> 
-            <div id="main_content">
-            </div>
-            <br><span class="blinking-cursor">|</span><br>
-            <script>main_content();</script>
+<div class="all">
+    
+    <div class="nav">
+	<div class="container">
+	<ul class="UL">
+		<li id="home-wrap"> <a id="home" onclick="home();">Eric Huynh</a> </li>
+		<li id="about-wrap"> <a id="about" onclick="about();">About Me</a></li>
+		<li id="projects-wrap"> <a id="projects" onclick="projects();">Projects</a></li>
+		<li> <a id="resume" onclick="resume();">Resume</a></li>
+		<li id="contact-wrap"> <a id="contact" onclick="contact();">Contact</a></li>
+        <li id="sivi-wrap"> <a id="sivi" onclick="sivi();">Project Sivi</a></li>
+<!--        <span id="name">Eric Huynh</span>-->
+	</ul>
+	</div>
+    </div>
+    
+    <div class="mess">
+	   <h1></h1>
+    </div>
+    
+    <div class="fademe">
+    
+    <div id="content-wrapper">
+        <div id="content">
         </div>
-    </div>     
+    </div>
+    
+    <div class="copy">
+    <div class="copyright">
+        <footer>&copy; 2015 Eric Huynh
+<!--        <p>-->
+            <!--    Large-->
+<!--
+            <iframe id="large" src="https://embed.spotify.com/?        uri=spotify:user:erichuynhing:playlist:3ugdD00YLW12G3lS3S5Y17&theme=white" width="300" height="380" frameborder="0" allowtransparency="true">
+            </iframe>
+-->
+            <!--    Compact-->
+<!--
+        <iframe id="compact" src="https://embed.spotify.com/?uri=spotify:user:erichuynhing:playlist:3ugdD00YLW12G3lS3S5Y17&theme=white" width="300" height="80" frameborder="0" allowtransparency="true" style="padding-top: 5px">
+        </iframe>
+-->
+<!--        </p>-->
+        </footer>
+    </div>
+    </div>
+        
+    </div>
+    
 </div>
     
+<script type="text/javascript">
+    preload(function() {
+        $('#spinner').delay(1000).fadeOut("slow", function() {
+//            $('#loading').delay(500).fadeOut("slow");
+            init($('#loading').delay(500).fadeOut("slow"));
+        });
+    });
+</script>
+  
 <!--Google Analytics!-->
 <script>
   (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){

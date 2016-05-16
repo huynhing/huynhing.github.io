@@ -1,10 +1,10 @@
 body {
-     background-color: #F0F8FF;   
+     background-color: #F8F8FF;   
 }
 
 .all {
 	font-family: 'Lucida Grande', 'Lucida Sans Unicode', 'Lucida Sans', Geneva, Verdana, sans-serif;
-    text-align: center;
+	text-align: center;
     cursor: default;
 }
 
@@ -22,7 +22,7 @@ body {
 	padding: 8px;
 	border: 3px solid;
 	background-color: #4169E1;
-    
+
 /*
     floating nav
     position: fixed;
@@ -32,12 +32,9 @@ body {
 */
 }
 
-#home {
-    color: black;
-}
-
-#resume:hover {
-    color: black;
+#about {
+    color:black;
+    cursor: default;
 }
 
 .nav a {
@@ -54,12 +51,12 @@ body {
 .nav a:hover {
 	color: black;
 	text-decoration: none;
+    cursor: pointer;
 }
 
 .nav .UL {
 	margin: 2px auto;
 }
-
 .nav li {
 	display: inline-block;
 	margin-right: 10px;
@@ -94,22 +91,51 @@ body {
 
 .mess h1 {
     padding: 10px;
-	text-align: center;
+	position: relative;
     font-weight: normal;
 }
+ 
+/*
+#meee:hover {
+  -webkit-transition: all 0.5s ease;
+     -moz-transition: all 0.5s ease;
+       -o-transition: all 0.5s ease;
+      -ms-transition: all 0.5s ease;
+          transition: all 0.5s ease;    
+  -webkit-transform: rotate(360deg);
+     -moz-transform: rotate(360deg);
+       -o-transform: rotate(360deg);
+      -ms-transform: rotate(360deg);
+          transform: rotate(360deg);
+}
+*/
 
-.submess {
-	text-align: center;
+#meee {
+    border-radius: 50%;
+}
+
+.me {
 	font-size: 20px;
 }
 
-#construction {
-    text-decoration: none;
+.me h3 {
+    margin-top: 10px;
+    font-weight: normal;
 }
 
-.submess h2, p {
-    font-weight: normal;
-    margin: 5px;
+.me img {
+    width: 3.75%;
+/*    width: 2.25%;*/
+}
+
+#emojis a {
+    text-decoration: none;
+    cursor: pointer;
+}
+
+
+.me p {
+    margin: 10px;
 }
 
 * {
@@ -119,32 +145,58 @@ body {
 footer {
     text-align: center;
     bottom: 0;
-    margin-top: 18px;
+    margin-top: 30px;
     width: 100%;
     display: block;
     padding-bottom: 10px;
 }
 
-/* Preloading images */
-
-#loading {
-    position: fixed;
-	left: 0px;
-	top: 0px;
-	width: 100%;
-	height: 100%;
-	z-index: 9999;
-	background: #F8F8FF;
+#divider h1 {
+    padding-top: 5px;
+    padding-bottom: 10px;
+    font-weight: 400;
 }
 
-#spinner {
-    width:200px;
-    height: 200px;
-    position: absolute;
-    left: 50%;
-    top: 50%;
-    background-image: url(../img/loading.gif);
-    background-repeat: no-repeat;
-    background-position: center;
-    margin: -100px 0 0 -100px;
+#hobby-content h1 {
+    border-top: 1px solid #C0C0C0;
 }
+
+#divider {
+/*
+    margin-left: 300px;
+    margin-right: 300px;
+*/
+    margin-left: 90px;
+    margin-right: 90px;
+    min-height: 437px;
+}
+
+#divider p {
+    padding-top: 10px;
+    line-height: 125%;
+}
+
+#tldr {
+    font-style: italic;   
+}
+
+#image {
+    padding-top: 10px;
+}
+
+#divider a {
+    text-decoration: none;
+    color: #3366FF;
+    cursor: pointer;  
+}
+
+#fact_click {
+    cursor: pointer;
+    color: #3366FF;
+}
+
+#randfact {
+    font-style: italic;   
+}
+
+
