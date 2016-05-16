@@ -46,18 +46,20 @@ body {
     color: #ae81ff;
 }
 
+/*
 #indented-once {
     padding-left: 48px;
 }
+*/
 
 #about_inner {
     position:absolute;
     top:50%;
     left:50%;
-    width: 700px;
+    width: 800px;
     height: 300px;
     margin-top: -150px; /* this is half the height of your div*/  
-    margin-left:-350px; /*this is half of width of your div*/
+    margin-left:-325px; /*this is half of width of your div*/
 }
 
 #me_image {
@@ -75,7 +77,7 @@ body {
 
 
 /*Blinking cursor*/
-.blinking-cursor {
+#blinking-cursor {
   font-weight: 100;
   font-size: 14px;
   color: #2E3D48;
@@ -120,7 +122,7 @@ body {
   50% {
     color: white;
   }
-}
+}.line
 
 @-o-keyframes "blink" {
   from, to {
@@ -130,3 +132,31 @@ body {
     color: white;
   }
 }
+
+
+
+.line {
+    counter-increment: line;
+}
+
+.line:before {
+    content: counter(line);
+    display: inline-block;
+    border-right: 1px solid #ddd;
+    padding: 0 .5em;
+    margin-right: .5em;
+    color: #888;
+    float: left;
+}
+
+/*
+#about_container .line:before{
+    counter-increment: line;
+    content: counter(line);
+    display: inline-block;
+    border-right: 1px solid #ddd;
+    padding: 0 .5em;
+    margin-right: .5em;
+    color: #888
+}
+*/
