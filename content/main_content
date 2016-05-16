@@ -4,12 +4,12 @@
 
 <br>
 
-<span class="line"></span><span id="orange_font">self</span><a onclick="about();" id='about_click'>.about_me()</a><span>,</span>
-<span id="orange_font">self</span><a onclick="contact();" id='contact_click'>.contact_me()</a>
+<span class="line"></span><span id="orange_font">self</span><span>.</span><a onclick="about();" id='about_click'>about_me()</a><span>,</span>
+<span id="orange_font">self</span><span>.</span><a onclick="contact();" id='contact_click'>contact_me()</a>
 
 <br><span class="line"></span><br>
 
-<span class="line"></span><span id="orange_font">self</span><span>.resume </span><span id="pink_font">= </span><span id="orange_font">self</span><a id="purple_font" href="files/resume.pdf" target="_blank">.open_resume()</a>
+<span class="line"></span><span id="orange_font">self</span><span>.resume </span><span id="pink_font">= </span><span id="orange_font">self</span><span>.</span><a id="purple_font" href="files/resume.pdf" target="_blank">open_resume()</a>
 
 <br><span class="line"></span><br>
 
