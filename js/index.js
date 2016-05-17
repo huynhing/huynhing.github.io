@@ -38,10 +38,8 @@ $.get('../about/random_facts', function(response) {
 function rand_fact() {
     facts = shuffle(facts);
     if (facts.length === 0) {
-        $('#fact').css('color', '#ae81ff');
         $('#fact').text('""');
     } else {
-        $('#fact').css('color', '#e6db74');
         var num = Math.floor((Math.random() * facts.length));
         if ($('#randfact').length != 0) {
             $('#randfact').fadeOut(480, function() {
