@@ -39,7 +39,7 @@ function rand_fact() {
     facts = shuffle(facts);
     if (facts.length === 0) {
         $('#fact').css('color', '#ae81ff');
-        $('#fact').text("None");
+        $('#fact').text('""');
     } else {
         $('#fact').css('color', '#e6db74');
         var num = Math.floor((Math.random() * facts.length));
