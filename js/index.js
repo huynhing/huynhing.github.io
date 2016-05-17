@@ -14,6 +14,10 @@ function car() {
     $("#main_content").load("../content/car", function(){});
 }
 
+function fantasy() {
+    $("#main_content").load("../content/fantasy", function(){});
+}
+
 //Credit --> Fisher-Yates Shuffle
 function shuffle(array) {
   var currentIndex = array.length, temporaryValue, randomIndex ;

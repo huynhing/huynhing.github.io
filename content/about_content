@@ -38,7 +38,7 @@
         
 <br><span class="line"></span><br>
 
-<span class="line"></span><span id="orange_font">&emsp;&emsp;&emsp;self</span><span>.current_car </span><span id="pink_font">= </span><span id="yellow_font">"honda civic si fb6"</span>
+<span class="line"></span><span id="orange_font">&emsp;&emsp;&emsp;self</span><span>.current_car </span><span id="pink_font">= </span><a onclick="car();" class="click">"honda civic si fb6"</a>
 
 <br><span class="line"></span><br>
 
