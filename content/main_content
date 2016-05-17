@@ -5,16 +5,16 @@
 
 <br>
 
-<span class="line"></span><span id="orange_font">&emsp;&emsp;&emsp;self</span><span>.</span><a onclick="about();" class="click">about_me()</a><span>,</span>
-<span id="orange_font">self</span><span>.</span><a onclick="contact();" class="click">contact_me()</a>
+<span class="line"></span><span id="orange_font">&emsp;&emsp;&emsp;self</span><span>.</span><a onclick="about();" id="purple_link">about_me()</a><span>,</span>
+<span id="orange_font">self</span><span>.</span><a onclick="contact();" id="purple_link">contact_me()</a>
 
 <br><span class="line"></span>
-<span id="orange_font">&emsp;&emsp;self</span><span>.</span><a onclick="car();" class="click">project_car()</a><span>,</span>
-<span id="orange_font">self</span><span>.</span><a onclick="fantasy();" class="click">fantasy_sports()</a>
+<span id="orange_font">&emsp;&emsp;self</span><span>.</span><a onclick="car();" id="purple_link">project_car()</a><span>,</span>
+<span id="orange_font">self</span><span>.</span><a onclick="fantasy();" id="purple_link">fantasy_sports()</a>
 
 <br><span class="line"></span><br>
 
-<span class="line"></span><span id="orange_font">&emsp;&emsp;&emsp;self</span><span>.resume </span><span id="pink_font">= </span><span id="orange_font">self</span><span>.</span><a id="purple_font" href="files/resume.pdf" target="_blank">open_resume()</a>
+<span class="line"></span><span id="orange_font">&emsp;&emsp;&emsp;self</span><span>.resume </span><span id="pink_font">= </span><span id="orange_font">self</span><span>.</span><a id="purple_link" href="files/resume.pdf" target="_blank">open_resume()</a>
 
 <br><span class="line"></span><br>
 
@@ -33,7 +33,7 @@
 <br><span class="line"></span><br>
 
 <span class="line"></span><span id="orange_font">&emsp;&emsp;&emsp;self</span><span>.projects</span><span id="pink_font"> = </span><span>[</span>
-    <a id="purple_font" href="http://soundfyre.net" target="_blank">soundfyre</a><span>,</span>
+    <a id="purple_link" href="http://soundfyre.net" target="_blank">soundfyre</a><span>,</span>
     <span id="yellow_font">mygeneralmanager</span><span>,</span>
     <span id="yellow_font">this_site</span>
 <span>]</span>
@@ -42,9 +42,9 @@
 
 <span class="line"></span><span id="orange_font">&emsp;&emsp;&emsp;self</span><span>.technical_experience </span><span id="pink_font">= </span><br><span class="line">&emsp;&emsp;&emsp;{</span><br>
 
-    <span class="line" id="yellow_font">&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;"pandora"</span><span> : (</span><span id="yellow_font">software engineer intern,</span><span> 06/16 - 08/16</span><span>)</span><br>
+    <span class="line" id="yellow_font">&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;"pandora"</span><span> : (</span><span id="yellow_font">"software engineer intern",</span><span> 06/16 - 08/16</span><span>)</span><br>
     
-    <a class="line" id="purple_font" href="http://berkeleytime.com" target="_blank">&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;"berkeleytime.com"</a><span>: (</span><span id="yellow_font">"senior backend engineer",</span><span> 10/15 - present</span><span>)</span><br>
+    <a class="line" id="purple_link" href="http://berkeleytime.com" target="_blank">&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;"berkeleytime.com"</a><span>: (</span><span id="yellow_font">"senior backend engineer",</span><span> 10/15 - present</span><span>)</span><br>
     
     <span class="line" id="yellow_font">&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;"uc berkeley"</span><span> : (<span id="yellow_font">"undergraduate researcher",</span><span> 11/15 - present</span><span>)</span><br>
     

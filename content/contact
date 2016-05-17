@@ -3,17 +3,17 @@
 <span class="line" id="grey_font">&emsp;&emsp;&emsp;"""</span>
 
 <br>
-<span class="line"></span><span id="orange_font">&emsp;&emsp;&emsp;self</span><span>.</span><a onclick="main_content();" class="click">go_back()</a>
+<span class="line"></span><span id="orange_font">&emsp;&emsp;&emsp;self</span><span>.</span><a onclick="main_content();" id="purple_link">go_back()</a>
 
 <br><span class="line"></span><br>
 
-<span class="line"></span><span id="orange_font">&emsp;&emsp;&emsp;self</span><span>.contact </span><span id="pink_font">= </span><br><span class="line" >&emsp;&emsp;&emsp;{</span><br>
+<span class="line"></span><span id="orange_font">&emsp;&emsp;&emsp;self</span><span>.contacts </span><span id="pink_font">= </span><br><span class="line" >&emsp;&emsp;&emsp;{</span><br>
 
-    <span class="line" id="yellow_font">&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;"primary"</span><span> : </span><a id="purple_font" href="mailto:ericehhuynh@gmail.com">ericehhuynh@gmail.com</a><br>
+    <span class="line" id="yellow_font">&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;"primary"</span><span> : </span><a id="purple_link" href="mailto:ericehhuynh@gmail.com">ericehhuynh@gmail.com</a><br>
     
-    <span class="line" id="yellow_font">&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;"secondary"</span><span> : </span><a id="purple_font" href="mailto:ericehhuynh@berkeley.edu">ericehhuynh@berkeley.edu</a><br>
+    <span class="line" id="yellow_font">&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;"secondary"</span><span> : </span><a id="purple_link" href="mailto:ericehhuynh@berkeley.edu">ericehhuynh@berkeley.edu</a><br>
     
-    <span class="line" id="yellow_font">&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;"phone"</span><span> : </span><a id="purple_font" href="tel:714-310-8273">714-310-8273</a><br>
+    <span class="line" id="yellow_font">&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;"phone"</span><span> : </span><a id="purple_link" href="tel:714-310-8273">714-310-8273</a><br>
 <span class="line">&emsp;&emsp;&emsp;}</span>
 
 <br>
