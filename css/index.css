@@ -174,19 +174,14 @@ body {
     }
     
     #about_inner {
-        position: absolute;
         top: 25%;
         left: 50%;
-        width: 800px;
-        height: 300px;
-        margin-top: -150px;
-        margin-left: -325px;
     }
     
     #meee {
         border-radius: 50%;
-        width: 12%;
-        height: 12%;
+        width: 14%;
+        height: 14%;
     }
     
 }
