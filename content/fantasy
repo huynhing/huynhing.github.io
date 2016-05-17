@@ -29,9 +29,9 @@
 <br><span class="line"></span><br>
 
 <span class="line"></span><span id="orange_font">&emsp;&emsp;&emsp;self</span><span>.bball_draft_strategy </span><span id="pink_font">= </span><span>[</span>
-    <span id="yellow_font">"cs"</span><span>,</span>
-    <span id="yellow_font">"pfs"</span><span>,</span>
-    <span id="yellow_font">"pgs"</span>
+    <span id="yellow_font">"c"</span><span>,</span>
+    <span id="yellow_font">"pf"</span><span>,</span>
+    <span id="yellow_font">"pg"</span>
     <span>]</span>
     </span>
     
