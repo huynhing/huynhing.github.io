@@ -1,22 +1,22 @@
-<span class="line" id="grey_font">"""</span><br>
-<span class="line" id="grey_font">about me</span><br>
-<span class="line" id="grey_font">"""</span>
+<span class="line" id="grey_font">&emsp;&emsp;&emsp;"""</span><br>
+<span class="line" id="grey_font">&emsp;&emsp;&emsp;about me</span><br>
+<span class="line" id="grey_font">&emsp;&emsp;&emsp;"""</span>
 
 <br>
-<span class="line"></span><span id="orange_font">self</span><span>.</span><a onclick="main_content();" id='back_click'>go_back()</a>
+<span class="line"></span><span id="orange_font">&emsp;&emsp;&emsp;self</span><span>.</span><a onclick="main_content();" id='back_click'>go_back()</a>
 
 <br><span class="line"></span><br>
 
-<span class="line"></span><span id="orange_font">self</span><span>.</span><a onclick="rand_fact();" id='rand_click'>random_fact()</a><br>
-<span class="line"></span><span id="orange_font">self</span><span>.random_fact </span><span id="pink_font">= </span><span id="fact">""</span>
+<span class="line"></span><span id="orange_font">&emsp;&emsp;&emsp;self</span><span>.</span><a onclick="rand_fact();" id='rand_click'>random_fact()</a><br>
+<span class="line"></span><span id="orange_font">&emsp;&emsp;&emsp;self</span><span>.random_fact </span><span id="pink_font">= </span><span id="fact">""</span>
 
 <br><span class="line"></span><br>
 
-<span class="line"></span><span id="orange_font">self</span><span>.location </span><span id="pink_font">= </span><span id="yellow_font">"southern california -> bay area"</span>
+<span class="line"></span><span id="orange_font">&emsp;&emsp;&emsp;self</span><span>.location </span><span id="pink_font">= </span><span id="yellow_font">"southern california -> bay area"</span>
 
 <br><span class="line"></span><br>
 
-<span class="line"></span><span id="orange_font">self</span><span>.hobbies </span><span id="pink_font">= </span><span>[</span>
+<span class="line"></span><span id="orange_font">&emsp;&emsp;&emsp;self</span><span>.hobbies </span><span id="pink_font">= </span><span>[</span>
     <span id="yellow_font">"basketball"</span><span>,</span>
     <span id="yellow_font">"cars"</span><span>,</span>
     <span id="yellow_font">"food"</span><span>,</span>
@@ -25,11 +25,11 @@
     <span id="yellow_font">"coding"</span>
 <span>]</span><br>
 
-<span class="line"></span><span id="orange_font">self</span><span>.is_hardcore_lakers_fan </span><span id="pink_font">= </span><span>(</span><span id="purple_font">True</span><span id="pink_font"> and </span><span id="purple_font">True</span><span>)</span><span id="pink_font"> or </span><span>(</span><span id="pink_font">not </span><span id="purple_font">False</span><span id="pink_font"> and </span><span id="purple_font">True</span><span>)</span><br>
+<span class="line"></span><span id="orange_font">&emsp;&emsp;&emsp;self</span><span>.is_hardcore_lakers_fan </span><span id="pink_font">= </span><span>(</span><span id="purple_font">True</span><span id="pink_font"> and </span><span id="purple_font">True</span><span>)</span><span id="pink_font"> or </span><span>(</span><span id="pink_font">not </span><span id="purple_font">False</span><span id="pink_font"> and </span><span id="purple_font">True</span><span>)</span><br>
 
-<span class="line"></span><span id="orange_font">self</span><span>.current_car </span><span id="pink_font">= </span><span id="yellow_font">"honda civic si fb6"</span><br>
+<span class="line"></span><span id="orange_font">&emsp;&emsp;&emsp;self</span><span>.current_car </span><span id="pink_font">= </span><span id="yellow_font">"honda civic si fb6"</span><br>
 
-<span class="line"></span><span id="orange_font">self</span><span>.favorite_foods </span><span id="pink_font">= </span><span>[</span>
+<span class="line"></span><span id="orange_font">&emsp;&emsp;&emsp;self</span><span>.favorite_foods </span><span id="pink_font">= </span><span>[</span>
     <span id="yellow_font">"pho"</span><span>,</span>
     <span id="yellow_font">"sushi"</span><span>,</span>
     <span id="yellow_font">"kbbq"</span><span>,</span>
@@ -37,7 +37,7 @@
     <span id="yellow_font">"in n out"</span>
 <span>]</span><br>
 
-<span class="line"></span><span id="orange_font">self</span><span>.favorite_music</span><span id="pink_font"> = </span><span>[</span>
+<span class="line"></span><span id="orange_font">&emsp;&emsp;&emsp;self</span><span>.favorite_music</span><span id="pink_font"> = </span><span>[</span>
     <span id="yellow_font">"kendrick lamar"</span><span>,</span>
     <span id="yellow_font">"flume"</span><span>,</span>
     <span id="yellow_font">"j. cole"</span><span>,</span>
