@@ -5,8 +5,9 @@
 
 <br>
 
-<span class="line"></span><span id="orange_font">&emsp;&emsp;&emsp;self</span><span>.</span><a onclick="about();" id='about_click'>about_me()</a><span>,</span>
-<span id="orange_font">self</span><span>.</span><a onclick="contact();" id='contact_click'>contact_me()</a>
+<span class="line"></span><span id="orange_font">&emsp;&emsp;&emsp;self</span><span>.</span><a onclick="about();" class="click">about_me()</a><span>,</span>
+<span id="orange_font">self</span><span>.</span><a onclick="car();" class="click">project_car()</a><span>,</span>
+<span id="orange_font">self</span><span>.</span><a onclick="contact();" class="click">contact_me()</a>
 
 <br><span class="line"></span><br>
 

@@ -3,11 +3,11 @@
 <span class="line" id="grey_font">&emsp;&emsp;&emsp;"""</span>
 
 <br>
-<span class="line"></span><span id="orange_font">&emsp;&emsp;&emsp;self</span><span>.</span><a onclick="main_content();" id='back_click'>go_back()</a>
+<span class="line"></span><span id="orange_font">&emsp;&emsp;&emsp;self</span><span>.</span><a onclick="main_content();" class="click">go_back()</a>
 
 <br><span class="line"></span><br>
 
-<span class="line"></span><span id="orange_font">&emsp;&emsp;&emsp;self</span><span>.</span><a onclick="rand_fact();" id='rand_click'>random_fact()</a><br>
+<span class="line"></span><span id="orange_font">&emsp;&emsp;&emsp;self</span><span>.</span><a onclick="rand_fact();" class="click">random_fact()</a><br>
 <span class="line"></span><span id="orange_font">&emsp;&emsp;&emsp;self</span><span>.random_fact </span><span id="pink_font">= </span><span id="fact">""</span>
 
 <br><span class="line"></span><br>

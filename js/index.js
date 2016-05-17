@@ -10,6 +10,10 @@ function contact() {
     $("#main_content").load("../content/contact", function(){});
 }
 
+function car() {
+    $("#main_content").load("../content/car", function(){});
+}
+
 //Credit --> Fisher-Yates Shuffle
 function shuffle(array) {
   var currentIndex = array.length, temporaryValue, randomIndex ;

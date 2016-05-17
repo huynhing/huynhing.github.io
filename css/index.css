@@ -37,7 +37,7 @@ body {
     color: #75715e;
 }
 
-#rand_click, #about_click, #back_click, #contact_click {
+.click {
     color: #ae81ff;
     cursor: pointer;
 }

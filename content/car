@@ -1,0 +1,77 @@
+<span class="line" id="grey_font">&emsp;&emsp;&emsp;"""</span><br>
+<span class="line" id="grey_font">&emsp;&emsp;&emsp;project page for ongoing</span><br>
+<span class="line" id="grey_font">&emsp;&emsp;&emsp;9th gen honda civic si build</span><br>
+<span class="line" id="grey_font">&emsp;&emsp;&emsp;"""</span>
+
+<br>
+<span class="line"></span><span id="orange_font">&emsp;&emsp;&emsp;self</span><span>.</span><a onclick="main_content();" class="click">go_back()</a>
+
+<br><span class="line"></span><br>
+
+<span class="line"></span><span id="orange_font">&emsp;&emsp;&emsp;self</span><span>.current_mileage </span><span id="pink_font">= </span><span id="purple_font">10,000 miles</span>
+
+<br><span class="line"></span><br>
+
+<span class="line"></span><span id="orange_font">&emsp;&emsp;&emsp;self</span><span>.average_mpg </span><span id="pink_font">= </span><span id="purple_font">27.6 mpg</span>
+
+<br><span class="line"></span><br>
+
+<span class="line"></span><span id="orange_font">&emsp;&emsp;&emsp;self</span><span>.goals </span><span id="pink_font">= </span><span>[</span>
+    <span id="yellow_font">"fast"</span><span>,</span>
+    <span id="yellow_font">"fun"</span><span>,</span>
+    <span id="yellow_font">"reliable"</span>
+    <span>]</span>
+    </span>
+
+<br><span class="line"></span><br>
+
+<span class="line"></span><span id="orange_font">&emsp;&emsp;&emsp;self</span><span>.mods </span><span id="pink_font">= </span><span>[</span>
+    <span id="yellow_font">"strut_bar"</span><span>,</span>
+    <span id="yellow_font">"short_shifter"</span><span>,</span>
+    <span id="yellow_font">"chassis_braces"</span><span>,</span>
+    
+    <br>
+    <span class="line">
+        &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;
+        &emsp;&emsp;&emsp;&emsp;&emsp;
+        <span id="yellow_font">"trunk_brace"</span><span>,</span>
+        <span id="yellow_font">"mugen_wing"</span><span>,</span>
+        <span id="yellow_font">"led_reflectors"</span><span>,</span>
+    </span>
+    
+    <br>
+    <span class="line">
+        &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;
+        &emsp;&emsp;&emsp;&emsp;&emsp;
+        <span id="yellow_font">"front_lip"</span><span>,</span>
+        <span id="yellow_font">"window_visors"</span><span>,</span>
+        <span id="yellow_font">"light_overlays"</span>
+        <span>]</span>
+    </span>
+    
+<br><span class="line"></span><br>
+
+<span class="line"></span><span id="orange_font">&emsp;&emsp;&emsp;self</span><span>.future_mods </span><span id="pink_font">= </span><span>[</span>
+    <span id="yellow_font">"catback_exhaust"</span><span>,</span>
+    <span id="yellow_font">"cold_air_intake"</span><span>,</span>
+    
+    <br>
+    <span class="line">
+        &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;
+        &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;
+        &emsp;&emsp;
+        <span id="yellow_font">"sway_bars"</span><span>,</span>
+        <span id="yellow_font">"catted_downpipe"</span><span>,</span>
+    </span>
+    
+    <br>
+    <span class="line">
+        &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;
+        &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;
+        &emsp;&emsp;
+        <span id="yellow_font">"hids"</span><span>,</span>
+        <span id="yellow_font">"forced_induction"</span>
+        <span>]</span>
+    </span>
+
+<br>
