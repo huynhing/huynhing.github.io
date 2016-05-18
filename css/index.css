@@ -81,6 +81,11 @@ body {
 	filter: grayscale(100%)   
 }
 
+#me_image {
+    padding-top: 20px;
+    text-align: center;
+}
+
 /*Blinking cursor*/
 #blinking-cursor {
   font-weight: 100;
@@ -197,18 +202,31 @@ body {
     background-color: #33CC33;   
 }
 
+@media only screen and (max-device-width: 768px) {
+    body {
+        zoom: 1.25;
+    }
+    
+    #about_inner {
+        top: 20%;
+    }
+    
+    #meee {
+        display: none;
+    }    
+}
+
+
 @media only screen and (max-device-width: 760px) {
     body {
         zoom: 1.25;
     }
     
     #about_inner {
-        top: 23%;
-        left: 50%;
+        top: 13%;
     }
     
     #meee {
         display: none;
-    }
-    
+    }    
 }
