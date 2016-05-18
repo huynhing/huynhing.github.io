@@ -1,0 +1,30 @@
+#blue_font {
+    color: #66D9EF;
+    font-style: italic;
+}
+
+#green_font {
+    color: #a6e22e;
+}
+
+#orange_font {
+    color: #fd971f;
+    font-style: italic;
+}
+
+#pink_font {
+    color: #f92672;
+}
+
+#yellow_font {
+    color: #e6db74
+}
+
+#purple_font {
+    color: #ae81ff;
+    text-decoration: none;
+}
+
+#grey_font {
+    color: #75715e;
+}
