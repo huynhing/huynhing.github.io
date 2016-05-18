@@ -1,21 +1,21 @@
 function about() {
-    $("#main_content").load("../content/about_content", function() {});
+    $("#main_content").load("../content/about.html", function() {});
 }
 
 function main_content() {
-    $("#main_content").load("../content/main_content", function(){});
+    $("#main_content").load("../content/main.html", function(){});
 }
 
 function contact() {
-    $("#main_content").load("../content/contact", function(){});
+    $("#main_content").load("../content/contact.html", function(){});
 }
 
 function car() {
-    $("#main_content").load("../content/car", function(){});
+    $("#main_content").load("../content/car.html", function(){});
 }
 
 function fantasy() {
-    $("#main_content").load("../content/fantasy", function(){});
+    $("#main_content").load("../content/fantasy.html", function(){});
 }
 
 //Credit --> Fisher-Yates Shuffle
