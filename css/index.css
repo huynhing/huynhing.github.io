@@ -241,20 +241,10 @@ body {
     
     #meee {
         display: none;
-    }    
-}
-
-
-@media only screen and (max-device-width: 760px) {
-    body {
-        zoom: 1.25;
     }
     
-    #about_inner {
-        top: 13%;
+    #top_bar {
+        display: none;   
     }
-    
-    #meee {
-        display: none;
-    }    
 }
+
