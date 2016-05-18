@@ -44,7 +44,7 @@
 
     <span class="line" id="yellow_font">&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;"pandora"</span><span> : (</span><span id="yellow_font">"software engineer intern",</span><span> 06/16 - 08/16</span><span>)</span><br>
     
-    <a class="line" id="purple_link" href="http://berkeleytime.com" target="_blank">&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;"berkeleytime.com"</a><span>: (</span><span id="yellow_font">"senior backend engineer",</span><span> 10/15 - present</span><span>)</span><br>
+    <span class="line"></span><a id="purple_link" href="http://berkeleytime.com" target="_blank">&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;"berkeleytime.com"</a><span>: (</span><span id="yellow_font">"senior backend engineer",</span><span> 10/15 - present</span><span>)</span><br>
     
     <span class="line" id="yellow_font">&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;"uc berkeley"</span><span> : (<span id="yellow_font">"undergraduate researcher",</span><span> 11/15 - present</span><span>)</span><br>
     
