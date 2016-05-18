@@ -1,30 +1,29 @@
-<span class="line" id="grey_font">&emsp;&emsp;&emsp;"""</span><br>
-<span class="line" id="grey_font">&emsp;&emsp;&emsp;get to know me quickly.</span><br>
-<span class="line" id="grey_font">&emsp;&emsp;&emsp;"""</span>
+<span class="line"></span><span class="indentation1" id="grey_font">"""</span><br>
+<span class="line"></span><span class="indentation1" id="grey_font">get to know me quickly.</span><br>
+<span class="line"></span><span class="indentation1" id="grey_font">"""</span>
 
 <br>
-<span class="line"></span><span id="orange_font">&emsp;&emsp;&emsp;self</span><span>.</span><a onclick="main_content();" id="purple_link">go_back()</a>
+<span class="line"></span><span id="orange_font" class="indentation1">self</span><span>.</span><a onclick="main_content();" id="purple_link">go_back()</a>
 
 <br><span class="line"></span><br>
 
-<span class="line"></span><span id="orange_font">&emsp;&emsp;&emsp;self</span><span>.</span><a onclick="rand_fact();" id="purple_link">random_fact_iterator.next()</a><br>
-<span class="line"></span><span id="orange_font">&emsp;&emsp;&emsp;self</span><span>.random_fact </span><span id="pink_font">= </span><span id="fact">""</span>
+<span class="line"></span><span id="orange_font" class="indentation1">self</span><span>.</span><a onclick="rand_fact();" id="purple_link">random_fact_iterator.next()</a><br>
+<span class="line"></span><span id="orange_font" class="indentation1">self</span><span>.random_fact </span><span id="pink_font">= </span><span id="fact">""</span>
 
 <br><span class="line"></span><br>
 
-<span class="line"></span><span id="orange_font">&emsp;&emsp;&emsp;self</span><span>.location </span><span id="pink_font">= </span><span id="yellow_font">"southern california -> bay area"</span>
+<span class="line"></span><span id="orange_font" class="indentation1">self</span><span>.location </span><span id="pink_font">= </span><span id="yellow_font">"southern california -> bay area"</span>
 
 <br><span class="line"></span><br>
 
-<span class="line"></span><span id="orange_font">&emsp;&emsp;&emsp;self</span><span>.hobbies </span><span id="pink_font">= </span><span>[</span>
+<span class="line"></span><span id="orange_font" class="indentation1">self</span><span>.hobbies </span><span id="pink_font">= </span><span>[</span>
     <span id="yellow_font">"basketball"</span><span>,</span>
     <span id="yellow_font">"cars"</span><span>,</span>
     <span id="yellow_font">"food"</span><span>,</span>
     
     <br>
     <span class="line">
-        &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;
-        &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&nbsp;
+        <span class="indentation_about1"></span>
         <span id="yellow_font">"music"</span><span>,</span>
         <span id="yellow_font">"piano"</span><span>,</span>
         <span id="yellow_font">"coding"</span>
@@ -33,25 +32,23 @@
     
 <br><span class="line"></span><br>
 
-<span class="line"></span><span id="orange_font">&emsp;&emsp;&emsp;self</span><span>.is_hardcore_lakers_fan </span><span id="pink_font">= </span>
+<span class="line"></span><span id="orange_font" class="indentation1">self</span><span>.is_hardcore_lakers_fan </span><span id="pink_font">= </span>
     <span>(</span><span id="purple_font">True</span><span id="pink_font"> and </span><span id="pink_font">not </span><span id="purple_font">False</span><span>)</span>
         
 <br><span class="line"></span><br>
 
-<span class="line"></span><span id="orange_font">&emsp;&emsp;&emsp;self</span><span>.current_car </span><span id="pink_font">= </span><a onclick="car();" id="purple_link">"honda civic si fb6"</a>
+<span class="line"></span><span id="orange_font" class="indentation1">self</span><span>.current_car </span><span id="pink_font">= </span><a onclick="car();" id="purple_link">"honda civic si fb6"</a>
 
 <br><span class="line"></span><br>
 
-<span class="line"></span><span id="orange_font">&emsp;&emsp;&emsp;self</span><span>.favorite_foods </span><span id="pink_font">= </span><span>[</span>
+<span class="line"></span><span id="orange_font" class="indentation1">self</span><span>.favorite_foods </span><span id="pink_font">= </span><span>[</span>
     <span id="yellow_font">"pho"</span><span>,</span>
     <span id="yellow_font">"sushi"</span><span>,</span>
     <span id="yellow_font">"kbbq"</span><span>,</span>
     
     <br>
     <span class="line">
-        &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;
-        &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;
-        &nbsp;&nbsp;&nbsp;
+        <span class="indentation_about2"></span>
         <span id="yellow_font">"buffalo wings"</span><span>,</span>
         <span id="yellow_font">"in n out"</span>
     </span>
@@ -60,15 +57,13 @@
 
 <br><span class="line"></span><br>
 
-<span class="line"></span><span id="orange_font">&emsp;&emsp;&emsp;self</span><span>.favorite_music</span><span id="pink_font"> = </span><span>[</span>
+<span class="line"></span><span id="orange_font" class="indentation1">self</span><span>.favorite_music</span><span id="pink_font"> = </span><span>[</span>
     <span id="yellow_font">"kendrick lamar"</span><span>,</span>
     <span id="yellow_font">"flume"</span><span>,</span>
     
     <br>
     <span class="line">
-        &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;
-        &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;
-        &nbsp;&nbsp;&nbsp;
+        <span class="indentation_about2"></span>
         <span id="yellow_font">"j. cole"</span><span>,</span>
         <span id="yellow_font">"rhcp"</span><span>,</span>
         <span id="yellow_font">"chopin"</span>

@@ -1,38 +1,43 @@
-<span class="line" id="grey_font">&emsp;&emsp;&emsp;"""</span><br>
-<span class="line" id="grey_font">&emsp;&emsp;&emsp;python class for describing me. inspired by sublime.</span><br>
-<span class="line" id="grey_font">&emsp;&emsp;&emsp;purple texts are interactive.</span><br>
-<span class="line" id="grey_font">&emsp;&emsp;&emsp;"""</span>
+<span class="line"></span><span id="grey_font" class="indentation1">"""</span><br>
+<span class="line"></span><span id="grey_font" class="indentation1">python class for describing me. inspired by sublime.</span><br>
+<span class="line"></span><span id="grey_font" class="indentation1">purple texts are interactive.</span><br>
+<span class="line"></span><span id="grey_font" class="indentation1">"""</span>
 
 <br>
 
-<span class="line"></span><span id="orange_font">&emsp;&emsp;&emsp;self</span><span>.</span><a onclick="about();" id="purple_link">about_me()</a><span>,</span>
+<span class="line"></span><span id="orange_font" class="indentation1">self</span><span>.</span><a onclick="about();" id="purple_link">about_me()</a><span>,</span>
 <span id="orange_font">self</span><span>.</span><a onclick="contact();" id="purple_link">contact_me()</a>
 
-<br><span class="line"></span>
-<span id="orange_font">&emsp;&emsp;self</span><span>.</span><a onclick="car();" id="purple_link">project_car()</a><span>,</span>
+<br>
+
+<span class="line"></span><span id="orange_font" class="indentation1">self</span><span>.</span><a onclick="car();" id="purple_link">project_car()</a><span>,</span>
 <span id="orange_font">self</span><span>.</span><a onclick="fantasy();" id="purple_link">fantasy_sports()</a>
 
 <br><span class="line"></span><br>
 
-<span class="line"></span><span id="orange_font">&emsp;&emsp;&emsp;self</span><span>.resume </span><span id="pink_font">= </span><span id="orange_font">self</span><span>.</span><a id="purple_link" href="files/resume.pdf" target="_blank">open_resume()</a>
+<span class="line"></span><span id="orange_font" class="indentation1">self</span><span>.resume </span><span id="pink_font">= </span><span id="orange_font">self</span><span>.</span><a id="purple_link" href="files/resume.pdf" target="_blank">open_resume()</a>
 
 <br><span class="line"></span><br>
 
-<span class="line"></span><span id="orange_font">&emsp;&emsp;&emsp;self</span><span>.education </span><span id="pink_font">= </span><br><span class="line">&emsp;&emsp;&emsp;{</span><br>
+<span class="line"></span><span id="orange_font" class="indentation1">self</span><span>.education </span><span id="pink_font">= </span><br>
 
-    <span class="line" id="yellow_font">&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;"high_school"</span><span> : </span><span id="yellow_font">"orange county high school of the arts"</span><br>
+<span class="line"></span><span class="indentation1">{</span><br>
+
+<span class="line"></span><span id="yellow_font" class="indentation2">"high_school"</span><span> : </span><span id="yellow_font">"orange county high school of the arts"</span><br>
     
-    <span class="line" id="yellow_font">&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;"college"</span><span> : </span><span id="yellow_font">"university of california, berkeley"</span><br>
+<span class="line"></span><span id="yellow_font" class="indentation2">"college"</span><span> : </span><span id="yellow_font">"university of california, berkeley"</span><br>
     
-    <span class="line" id="yellow_font">&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;"major"</span><span> : </span><span id="yellow_font">"computer science"</span><br>
+<span class="line"></span><span id="yellow_font" class="indentation2">"major"</span><span> : </span><span id="yellow_font">"computer science"</span><br>
     
-    <span class="line" id="yellow_font">&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;"years_attended"</span><span> : </span><span id="yellow_font">"2014-2017"</span><br>
+<span class="line"></span><span id="yellow_font" class="indentation2">"years_attended"</span><span> : </span><span id="yellow_font">"2014-2017"</span><br>
     
-<span class="line">&emsp;&emsp;&emsp;}</span>
+<span class="line"></span><span class="indentation1">}</span>
 
 <br><span class="line"></span><br>
 
-<span class="line"></span><span id="orange_font">&emsp;&emsp;&emsp;self</span><span>.projects</span><span id="pink_font"> = </span><span>[</span>
+<span class="line"></span><span id="orange_font" class="indentation1">self</span><span>.projects</span><span id="pink_font"> = </span>
+
+<span>[</span>
     <a id="purple_link" href="http://soundfyre.net" target="_blank">soundfyre</a><span>,</span>
     <span id="yellow_font">mygeneralmanager</span><span>,</span>
     <span id="yellow_font">this_site</span>
@@ -40,16 +45,18 @@
 
 <br><span class="line"></span><br>
 
-<span class="line"></span><span id="orange_font">&emsp;&emsp;&emsp;self</span><span>.technical_experience </span><span id="pink_font">= </span><br><span class="line">&emsp;&emsp;&emsp;{</span><br>
+<span class="line"></span><span id="orange_font" class="indentation1">self</span><span>.technical_experience </span><span id="pink_font">= </span><br>
 
-    <span class="line" id="yellow_font">&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;"pandora"</span><span> : (</span><span id="yellow_font">"software engineer intern",</span><span> 06/16 - 08/16</span><span>)</span><br>
+<span class="line"></span><span class="indentation1">{</span><br>
+
+<span class="line"></span><span id="yellow_font" class="indentation2">"pandora"</span><span> : (</span><span id="yellow_font">"software engineer intern",</span><span> 06/16 - 08/16</span><span>)</span><br>
     
-    <span class="line"></span><a id="purple_link" href="http://berkeleytime.com" target="_blank">&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;"berkeleytime.com"</a><span>: (</span><span id="yellow_font">"senior backend engineer",</span><span> 10/15 - present</span><span>)</span><br>
+<span class="line"></span><span class="indentation2"><a id="purple_link" href="http://berkeleytime.com" target="_blank">"berkeleytime.com"</a></span><span>: (</span><span id="yellow_font">"senior backend engineer",</span><span> 10/15 - present</span><span>)</span><br>
     
-    <span class="line" id="yellow_font">&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;"uc berkeley"</span><span> : (<span id="yellow_font">"undergraduate researcher",</span><span> 11/15 - present</span><span>)</span><br>
+<span class="line"></span><span id="yellow_font" class="indentation2">"uc berkeley"</span><span> : (<span id="yellow_font">"undergraduate researcher",</span><span> 11/15 - present</span><span>)</span><br>
     
-    <span class="line" id="yellow_font">&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;"uc berkeley"</span><span> : (</span><span id="yellow_font">"cs61a lab assistant",</span><span> 06/15 - 01/16</span><span>)</span><br>
+<span class="line"></span><span id="yellow_font" class="indentation2">"uc berkeley"</span><span> : (</span><span id="yellow_font">"cs61a lab assistant",</span><span> 06/15 - 01/16</span><span>)</span><br>
     
-<span class="line" >&emsp;&emsp;&emsp;}</span>
+<span class="line"></span><span class="indentation1">}</span>
 
 <br>

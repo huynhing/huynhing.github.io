@@ -1,61 +1,57 @@
-<span class="line" id="grey_font">&emsp;&emsp;&emsp;"""</span><br>
-<span class="line" id="grey_font">&emsp;&emsp;&emsp;(fantasy) ball is life.</span><br>
-<span class="line" id="grey_font">&emsp;&emsp;&emsp;"""</span>
+<span class="line"></span><span class="indentation1" id="grey_font">"""</span><br>
+<span class="line"></span><span class="indentation1" id="grey_font">(fantasy) ball is life.</span><br>
+<span class="line"></span><span class="indentation1" id="grey_font">"""</span>
 
 <br>
-<span class="line"></span><span id="orange_font">&emsp;&emsp;&emsp;self</span><span>.</span><a onclick="main_content();" id="purple_link">go_back()</a>
+<span class="line"></span><span id="orange_font" class="indentation1">self</span><span>.</span><a onclick="main_content();" id="purple_link">go_back()</a>
 
 <br><span class="line"></span><br>
 
-<span class="line"></span><span id="orange_font">&emsp;&emsp;&emsp;self</span><span>.years_played </span><span id="pink_font">= </span><span id="purple_font">2</span>
+<span class="line"></span><span id="orange_font" class="indentation1">self</span><span>.years_played </span><span id="pink_font">= </span><span id="purple_font">2</span>
 
 <br><span class="line"></span><br>
 
-<span class="line"></span><span id="orange_font">&emsp;&emsp;&emsp;self</span><span>.championships </span><span id="pink_font">= </span><span id="purple_font">1</span><span id="grey_font"> #basketball</span>
+<span class="line"></span><span id="orange_font" class="indentation1">self</span><span>.championships </span><span id="pink_font">= </span><span id="purple_font">1</span><span id="grey_font"> #basketball</span>
 
 <br><span class="line"></span><br>
 
-<span class="line"></span><span id="orange_font">&emsp;&emsp;&emsp;self</span><span>.finals_appearances </span><span id="pink_font">= </span><span id="purple_font">3</span><span id="grey_font"> #2 football, 1 basketball</span>
+<span class="line"></span><span id="orange_font" class="indentation1">self</span><span>.finals_appearances </span><span id="pink_font">= </span><span id="purple_font">3</span><span id="grey_font"> #2 football, 1 basketball</span>
 
 <br><span class="line"></span><br>
 
-<span class="line"></span><span id="orange_font">&emsp;&emsp;&emsp;self</span><span>.basketball_team_name </span><span id="pink_font">= </span><span id="yellow_font">"boom boom pau (gasol)"</span>
+<span class="line"></span><span id="orange_font" class="indentation1">self</span><span>.basketball_team_name </span><span id="pink_font">= </span><span id="yellow_font">"boom boom pau (gasol)"</span>
 
 <br><span class="line"></span><br>
 
-<span class="line"></span><span id="orange_font">&emsp;&emsp;&emsp;self</span><span>.football_team_name </span><span id="pink_font">= </span><span id="yellow_font">"the huynhers"</span>
+<span class="line"></span><span id="orange_font" class="indentation1">self</span><span>.football_team_name </span><span id="pink_font">= </span><span id="yellow_font">"the huynhers"</span>
 
 <br><span class="line"></span><br>
 
-<span class="line"></span><span id="orange_font">&emsp;&emsp;&emsp;self</span><span>.bball_draft_strategy </span><span id="pink_font">= </span><span>[</span>
+<span class="line"></span><span id="orange_font" class="indentation1">self</span><span>.bball_draft_strategy </span><span id="pink_font">= </span><span>[</span>
     <span id="yellow_font">"c"</span><span>,</span>
     <span id="yellow_font">"pf"</span><span>,</span>
     <span id="yellow_font">"pg"</span>
     <span>]</span>
     </span>
     
-<br><span class="line" id="grey_font">&emsp;&emsp;&emsp;#rebounds and assists rule everything around me</span>
+<br><span class="line"></span><span id="grey_font" class="indentation1">#rebounds and assists rule everything around me</span>
 
 <br><span class="line"></span><br>
 
-<span class="line"></span><span id="orange_font">&emsp;&emsp;&emsp;self</span><span>.go_to_bball_players</span><span id="pink_font"> = </span><span>[</span>
+<span class="line"></span><span id="orange_font" class="indentation1">self</span><span>.go_to_bball_players</span><span id="pink_font"> = </span><span>[</span>
     <span id="yellow_font">"russell_westbrook"</span><span>,</span>
     <span id="yellow_font">"jae_crowder"</span><span>,</span>
     
     <br>
     <span class="line">
-        &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;
-        &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;
-        &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&nbsp;
+        <span class="indentation_fantasy"></span>
         <span id="yellow_font">"giannis_antetokounmpo"</span><span>,</span>
         <span id="yellow_font">"pau_gasol</span><span>,</span>
     </span>
     
     <br>
     <span class="line">
-        &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;
-        &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;
-        &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&nbsp;
+        <span class="indentation_fantasy"></span>
         <span id="yellow_font">"kemba_walker"</span><span>,</span>
         <span id="yellow_font">"enes_kanter"</span>
         <span>]</span>

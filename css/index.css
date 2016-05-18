@@ -51,6 +51,34 @@ body {
     color: #e6db74;
 }
 
+.indentation1 {
+    padding-left: 36px;   
+}
+
+.indentation2 {
+    padding-left: 70px;   
+}
+
+.indentation_fantasy {
+    padding-left: 288px;   
+}
+
+.indentation_about1 {
+    padding-left: 181px;   
+}
+
+.indentation_about2 {
+    padding-left: 244px;   
+}
+
+.indentation_car1 {
+    padding-left: 153px;   
+}
+
+.indentation_car2 {
+    padding-left: 216px;   
+}
+
 #about_inner {
     position: absolute;
     top: 50%;
