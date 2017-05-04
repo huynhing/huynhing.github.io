@@ -30,6 +30,10 @@ body {
     margin-left: -325px;
 }
 
+#top_bar_container {
+    border: 1px solid red;
+}
+
 #me_image {
     padding-top: 20px;
     text-align: center;
@@ -37,17 +41,8 @@ body {
 
 #meee {
     border-radius: 50%;
-    width: 10%;
-    height: 10%;
-	-webkit-filter: grayscale(0);
-	filter: grayscale(0);
-	-webkit-transition: .3s ease-in-out;
-	transition: .3s ease-in-out;
-}
-
-#meee:hover {
-	-webkit-filter: grayscale(100%);
-	filter: grayscale(100%)   
+    width: 13%;
+    height: 13%;
 }
 
 #me_image {
